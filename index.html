@@ -137,8 +137,7 @@
       </div>
 
 
-      <div class="section-group section-group--horizontal section-group--horizontal-left section-group--4  section">
-        
+      <div class="section-group section-group--horizontal section-group--horizontal-left section-group--4 ">
         <section class="section section--6">
           <a href="#">
             <div class="main-project-list-wrapper">
@@ -490,67 +489,66 @@
     });
 
 
-    // 스크롤 트리거 플러그인 활성화
-    gsap.registerPlugin(ScrollTrigger);
+        // 스크롤 트리거 플러그인 활성화
+        gsap.registerPlugin(ScrollTrigger);
 
-    function SectionGroup__init() {
-      $(".section-group--horizontal-right").each(function (index, node) {
-        let $group = $(node);
-        let $section = $group.find(" > .section");
+function SectionGroup__init() {
+  $(".section-group--horizontal-right").each(function (index, node) {
+    let $group = $(node);
+    let $section = $group.find(" > .section");
 
-        gsap.to($section, {
-          xPercent: 100 * ($section.length - 1),
-          ease: "none",
-          scrollTrigger: {
-            trigger: $group,
-            start: "bottom bottom",
-            end: "+=" + ($section.length - 1) + "00%",
-            pin: true,
-            scrub: true
-          }
-        });
+    gsap.to($section, {
+      xPercent: 100 * ($section.length - 1),
+      ease: "none",
+      scrollTrigger: {
+        trigger: $group,
+        start: "bottom bottom",
+        end: "+=" + ($section.length - 1) + "00%",
+        pin: true,
+        scrub: true
+      }
+    });
+  });
+
+  $(".section-group--horizontal-left").each(function (index, node) {
+    let $group = $(node);
+    let $section = $group.find(" > .section");
+
+    gsap.to($section, {
+      xPercent: -100 * ($section.length - 1),
+      ease: "none",
+      scrollTrigger: {
+        trigger: $group,
+        start: "bottom bottom",
+        end: "+=" + ($section.length - 1) + "00%",
+        pin: true,
+        scrub: true
+      }
+    });
+  });
+
+  $(".section-group--stack-up").each(function (index, node) {
+    let $group = $(node);
+    let $section = $group.find(" > .section:not(:first-child)");
+
+    $section.each(function (index, node) {
+      let $sectionOne = $(node);
+
+      gsap.to($sectionOne, {
+        ease: "none",
+        scrollTrigger: {
+          trigger: $sectionOne,
+          start: "bottom bottom",
+          pin: $sectionOne.prev(),
+          pinSpacing: false,
+          scrub: true,
+        }
       });
+    });
+  });
+}
 
-      $(".section-group--horizontal-left").each(function (index, node) {
-        let $group = $(node);
-        let $section = $group.find(" > .section");
-
-        gsap.to($section, {
-          xPercent: -100 * ($section.length - 1),
-          ease: "none",
-          scrollTrigger: {
-            trigger: $group,
-            start: "bottom bottom",
-            end: "+=" + ($section.length - 1) + "00%",
-            pin: true,
-            scrub: true
-          }
-        });
-      });
-
-      $(".section-group--stack-up").each(function (index, node) {
-        let $group = $(node);
-        let $section = $group.find(" > .section:not(:first-child)");
-
-        $section.each(function (index, node) {
-          let $sectionOne = $(node);
-
-          gsap.to($sectionOne, {
-            ease: "none",
-            scrollTrigger: {
-              trigger: $sectionOne,
-              start: "bottom bottom",
-              pin: $sectionOne.prev(),
-              pinSpacing: false,
-              scrub: true,
-            }
-          });
-        });
-      });
-    }
-
-    SectionGroup__init();
-
+SectionGroup__init();
     
     
   </script>
