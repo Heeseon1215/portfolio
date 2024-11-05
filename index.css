@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+body {
+  overflow-x:hidden;
+}
+
+.section-group--horizontal {
+  display:flex;
+}
+
+/**** main-contents ****/
+.main-introduce {
+  margin: 0 auto;
+  height: 100vh;
+  font-family: var(--font-main-en);
+  text-align: center;
+  align-content: center;
+}
+.main-introduce .main-introduce-txt  {
+  margin-top: 100px;
+}
+
+.main-introduce .main-introduce-txt .main-introduce-txt-wrapper  {
+  font-size: var(--font-main-title-xxlg);
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-web-wrapper {
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+/* arrow 로티 이미지 크기 조절 */
+.main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-web-wrapper .main-introduce-web .main_introduce_arrow svg {
+  width: 240px;
+  padding-top: 20px;
+}
+
+/* shining-line 로티 이미지 크기 조절 */
+.main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-publisher .main-introduce-shining-line {
+  width: 100px;
+}
+.main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-publisher .main-introduce-shining-line svg {
+  padding-top: 15px;
+}
+
+/* shining 로티 이미지 크기 조절 */
+.main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-uiux .main_introduce-shining {
+  width: 120px;
+}
+
+/* 마우스 로티 이미지 크기 조절 */
+.main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-uiux .main-introduce-mouse {
+  width: 100px;
+}
+.main-introduce-mouse svg {
+  padding-top : 15px;
+}
+
+/* 이모션 로티 이미지 크기 조절 */
+.main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-uiux .main-introduce-emotion {
+  width: 120px;
+}
+
+.main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-name {
+  width: 100%;
+  justify-content: center;
+}
+
+/* 토끼 로티 이미지 크기 조절 */
+.main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-name .main-introduce-rabbit {
+  width: 120px;
+}
+
+/* 포트폴리오 옆에 있는 화살표 */
+.main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-portfolio {
+  position: relative;
+  text-indent: 200px;
+}
+.main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-portfolio .main-introduce-bigarrow {
+  position: absolute;
+  z-index: -1;
+  left: -50px;
+  bottom: 50px;
+}
+
+/* 포트폴리오 메인 - 아래 타이틀들 */
+.main-introduce .main-introduce-txt .main-introduce-intro {
+  font-size: var(--font-main-title-rg);
+  margin:  var(--spacing-sm);
+  line-height: 1.8rem;
+}
+.main-introduce .main-introduce-txt .main-introduce-exploring {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  width: 250px;
+  font-size:var(--font-main-title-md) ;
+
+  border-radius: 120px;
+  margin: var(--spacing-sm) auto;
+}
+.main-introduce .main-introduce-txt .main-introduce-exploring a {
+  display: block;
+  padding: 10px;
+}
+
+.main-introduce .main-introduce-txt .main-scroll {
+  font-size: var(--font-main-title-sm);
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin-bottom: var(--spacing-sm);
+}
+
+/**** main-project ****/
+/* project-title */
+.main-project {
+  font-family: var(--font-main-en);
+  width: 94vw;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  flex-grow: 1;
+}
+
+.main-project .main-project-title .main-project-title-list {
+  padding: var(--spacing-xsm) 0 var(--spacing-md) 0;
+  font-size: var(--font-main-title-rg );
+  color: var(--color-primary-second);
+  width: 200px;
+}
+.main-project .main-project-title .main-project-title-list .active {
+  font-size: var(--font-main-title-md );
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+.main-project .main-project-title .main-project-title-list li a {
+  display: block;
+  padding: var(--spacing-xxsm);
+}
+
+.main-project .main-project-title .main-project-title-list li:hover a {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+
+  border-radius: 100px;
+  font-weight: 500;
+}
+
+/* project-list */
+
+.section {
+  position: relative;
+  margin: 0 50px 0 0;
+}
+
+.main-project-list-wrapper {
+  padding: 50px;
+  position: absolute;
+}
+
+.section .project-img {
+  border-radius: 20px;
+}
+
+/**** main-skill ****/
+.main-skill {
+  padding-top: var(--spacing-lg);
+  font-family: var(--font-main-ko);
+}
+.main-skill .main-skill-list {
+  flex-flow: column;
+  width: 50vw;
+  margin-left: auto;
+}
+
+.main-skill .main-skill-list li a {
+  grid-template-columns: 1.5fr 20fr 1fr;
+}
+
+.main-skill .main-skill-list .main-skill-list-wrapper {
+  border-bottom: var(--border-btm-primary-skill);
+  padding: var(--spacing-xxsm) 0 var(--spacing-xsm) 0 ;
+  margin-bottom: var(--spacing-xsm);
+}
+
+.main-skill .main-skill-list strong {
+  font-size: var(--font-main-title-lg);
+  font-family: var(--font-main-en);
+  font-weight: 500;
+}
+
+.main-skill .main-skill-list .main-skill-list-title {
+  font-size: var(--font-main-title-lg);
+  font-weight: 500;
+  font-family: var(--font-main-en);
+}
+
+.main-skill .main-skill-list li a .main-skill-list-info {
+  grid-column: 2;
+  padding: var(--spacing-xsm) 0;
+  display: none;
+}
+
+.main-skill .main-skill-list li a .main-skill-list-info li {
+  font-size: var(--font-main-title-md);
+  line-height: 3rem;
+}
+
+/**** main-aboutme ****/
+.main-aboutme {
+ display: flex;
+ flex-direction: column;
+}
+
+.main-aboutme .main-aboutme-wrapper {
+  grid-template-columns: 1fr 3fr;
+  width: 60vw;
+  justify-items: end;
+  margin-left: auto;
+  font-family: var(--font-main-ko);
+}
+
+.main-aboutme .main-aboutme-wrapper .main-title-icon {
+  width: 50px;
+  height: 50px;
+  animation: move 3s infinite linear;
+  grid-column: 2;
+  margin-bottom: var(--spacing-sm);
+}
+
+@keyframes move {
+  100% {
+    transform: rotate(360deg) ;
+  }
+}
+
+.main-aboutme .main-aboutme-wrapper .main-aboutme-list {
+  grid-column: 1;
+  align-content: end;
+  font-size: var(--font-main-title-md);
+  font-family: var(--font-main-ko);
+}
+
+.main-aboutme .main-aboutme-wrapper .main-aboutme-list li {
+  padding: 20px;
+}
+
+.main-aboutme .main-aboutme-wrapper .main-aboutme-list li p {
+  margin-left: 15px;
+}
+
+.main-aboutme .main-aboutme-wrapper .main-aboutme-info {
+  grid-column: 2;
+  font-size: var(--font-main-title-lg);
+  padding-top: var(--spacing-lg);
+  position: relative;
+}
+
+.main-aboutme .main-aboutme-wrapper .main-aboutme-info ::before {
+  content: "";
+  width: 100px; height: 100px;
+  position: absolute;
+  background: url(./images/aboutme2.png) no-repeat;
+  top: 60%;
+  left: -8%;
+}
+
+/**** main-experience ****/
+
+.main-experience .main-experience-list {
+  font-family: var(--font-main-ko);
+}
+.main-experience .main-experience-list .main-experience-list-info { 
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: var(--spacing-md);
+  margin-left: var(--spacing-xsm);
+}
+
+.main-experience .main-experience-list .main-experience-list-info li {
+  position: relative;
+}
+
+.main-experience .main-experience-list .main-experience-list-info li:nth-child(-n+4)
+{
+  border-top: var(--border-btm-primary);
+  border-bottom: var(--border-btm-primary);
+  padding: var(--spacing-md) 50px var(--spacing-md) 0;
+}
+
+  .main-experience .main-experience-list .main-experience-list-info .list4{
+  border-right: var(--border-btm-primary);
+  border-radius: 0 200px 200px 0;
+ }
+
+ .main-experience .main-experience-list .main-experience-list-info li:nth-child(n+5):nth-child(-n+8){
+  padding: var(--spacing-md) 50px var(--spacing-md) 0;
+}
+
+.main-experience .main-experience-list .main-experience-list-info li::before
+ {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.main-experience .main-experience-list .main-experience-list-info li p {
+  padding-bottom: var(--spacing-xsm);
+}
+
+.main-experience .main-experience-list .main-experience-list-info li strong {
+  line-height: 2.5rem;
+}
+
+.main-experience .main-experience-list .main-experience-list-info li p {
+  font-size: var(--font-main-title-rg);
+}
+
+.main-experience .main-experience-list .main-experience-list-info li strong {
+  font-size: var(--font-main-title-md);
+  font-weight: 500;
+}
+
+/**** main-license ****/
+.main-license .main-license-list {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+  padding-top: var(--spacing-md);
+  font-family: var(--font-main-ko);
+}
+
+.main-license .main-license-list li {
+  border: var(--border-btm-primary);
+  box-sizing: border-box;
+  width: calc(100vw / 5 );
+  aspect-ratio: 1 / 1;
+  padding: var(--spacing-xsm);
+  font-size: var(--font-main-title-md);
+  flex-wrap: wrap;
+}
+
+.main-license .main-license-list li:first-child,
+.main-license .main-license-list li:nth-child(4) {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.main-license .main-license-list li:first-child {
+  grid-column: 2;
+}
+
+.main-license .main-license-list li:last-child {
+  border:  none;
+  background: url(./images/shinig-line2.svg) no-repeat 50% / 80% ;
+  animation: move 10s infinite linear;
+}
+
+.main-license .main-license-list li strong {
+  width: 100%; 
+  margin-bottom: auto;
+}
+
+.main-license .main-license-list li p {
+  margin-top: auto;
+  font-size: var(--font-main-title-rg);
+}
+  
+/* 반짝이 이미지2  */
+.shininglist {
+  width: 30px; height: 30px;
+}

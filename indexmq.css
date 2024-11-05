@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+@media (max-width:768px) {
+
+  /**** main-contents ****/
+
+  .main-introduce {
+    padding: var(--spacing-xsm);
+  }
+
+  /* .main-introduce .main-introduce-txt .main-introduce-txt-wrapper {
+    justify-content: left;
+  
+  } */
+
+  .main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-web-wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: left;
+
+  }
+
+  /* arrow 로티 이미지 크기 조절 */
+  .main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-web-wrapper .main-introduce-web .main_introduce_arrow {
+    width: 100px;
+
+  }
+
+  .main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-web-wrapper .main-introduce-web .main_introduce_arrow svg {
+    margin-left: 15px;
+    padding-top: 10px;
+  }
+
+  /* shining-line 로티 이미지 크기 조절 */
+  .main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-publisher .main-introduce-shining-line {
+    margin-left: 15px;
+    width: 50px;
+  }
+
+  .main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-publisher .main-introduce-shining-line svg {
+    padding-top: 5px;
+  }
+
+  .main-introduce .main-introduce-txt .main-introduce-txt-wrapper{
+    justify-content: left;
+  }
+
+  /* shining 로티 이미지 크기 조절 */
+  .main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-uiux .main_introduce-shining {
+    display: none;
+  }
+
+  /* 마우스 로티 이미지 크기 조절 */
+.main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-uiux .main-introduce-mouse {
+  width: 50px;
+  margin: 0 15px;
+}
+.main-introduce-mouse svg {
+  padding-top : 5px;
+}
+/* 이모션 로티 이미지 크기 조절 */
+.main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-uiux .main-introduce-emotion {
+  width: 60px;
+  margin-left: 15px;
+}
+
+.main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-name {
+  width: 100%;
+  justify-content: left;
+}
+/* 토끼 로티 이미지 크기 조절 */
+.main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-name .main-introduce-rabbit {
+  width: 60px;
+}
+
+/* 포트폴리오 옆에 있는 화살표 */
+.main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-portfolio {
+  justify-content: left;
+  text-indent: 0;
+}
+.main-introduce .main-introduce-txt .main-introduce-txt-wrapper .main-introduce-portfolio .main-introduce-bigarrow {
+  display: none;
+}
+
+.main-introduce .main-introduce-txt .main-introduce-intro {
+  margin: var(--spacing-sm) 0 ;
+  line-height: 1.8rem;
+  text-align: left;
+}
+
+.main-introduce .main-introduce-txt .main-introduce-exploring {
+  width: 250px;
+  font-size:var(--font-main-title-rg) ;
+  border-radius: 0;
+  margin: var(--spacing-sm) auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

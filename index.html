@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Portfolio</title>
+
+  <!-- reset.css -->
+  <link rel="stylesheet" href="./assets/styles/reset.min.css">
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="./assets/images/favicon/favicon-48x48.png" sizes="48x48">
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg">
+  <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico">
+  <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+
+  <!-- og -->
+  <!-- title, desc -->
+  <meta name="Heeseon's portfolio" content="순간을 세심하게 디자인하는 디자이너 나희선의 포트폴리오입니다.">
+  <!-- og -->
+  <meta property="og:title" content="Heeseon's portfolio">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://heeseon1215.github.io/portfolio/assets/images/cover.jpg">
+  <meta property="og:url" content="https://heeseon1215.github.io/portfolio/">
+  <meta property="og:description" content="순간을 세심하게 디자인하는 디자이너 나희선의 포트폴리오입니다.">
+
+
+  <!-- global style -->
+  <link rel="stylesheet" href="./assets/styles/common.css">
+
+  <!-- layout: header, footer style -->
+  <link rel="stylesheet" href="./assets/styles/layout.css">
+
+
+  <!-- layout: index style -->
+  <link rel="stylesheet" href="./index.css">
+
+  <!-- layout: mq -->
+  <link rel="stylesheet" href="./indexmq.css">
+
+  <!-- lottie -->
+  <script src="./assets/scripts/lottie.min.js"></script>
+
+  <!-- js -->
+  <script src="./assets/scripts/jquery.min.js"></script>
+  <script src="./assets/scripts/gsap.min.js"></script>
+  <script src="./assets/scripts/ScrollTrigger.min.js"></script>
+
+
+</head>
+
+
+<body>
+  <!-- header -->
+  <header class="header flex-container padding-lg">
+    <h1 class="logo">logo</h1>
+
+    <!-- nav -->
+    <nav class="header-nav ">
+      <ul class="global-menu flex-container">
+        <li><a href="#">main</a></li>
+        <li><a href="#">project</a></li>
+        <li><a href="#">skills</a></li>
+        <li><a href="#">aboutme</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="https://github.com/Heeseon1215" target="_blank">github</a></li>
+      </ul>
+      <a href="#" class="mobile-menu"></a>
+    </nav>
+  </header>
+
+
+  <!-- main-contents -->
+  <main>
+    <!-- main-introduce -->
+    <div class="main-introduce">
+      <div class="main-introduce-txt ">
+        <div class="main-introduce-txt-wrapper flex-container">
+
+          <!-- WEB PUBLISHER -->
+          <div class="main-introduce-web-wrapper flex-container">
+            <h2 class="main-introduce-web flex-container">
+              WEB<span id="arrow" class="main_introduce_arrow"></span>
+            </h2>
+            <h2 class="main-introduce-publisher flex-container">
+              PUBLISHER <span id="shinigLine" class="main-introduce-shining-line"></span>
+            </h2>
+          </div>
+
+          <!-- UI UX DESIGNER -->
+          <h2 class="main-introduce-uiux flex-container">
+            <span id="shinig" class="main_introduce-shining"></span>UX<span id="mouse"
+              class="main-introduce-mouse"></span>
+            UI<span id="emotion" class="main-introduce-emotion"></span>
+          </h2>
+          <h2 class="main-introduce-designer">
+            DESIGNER
+          </h2>
+
+          <!-- HEESEON's -->
+          <h2 class="main-introduce-name flex-container">
+            HEESEON's<span id="rabbit" class="main-introduce-rabbit"></span>
+          </h2>
+
+          <!-- PORTFOLIO -->
+          <h2 class="main-introduce-portfolio">
+            <img class="main-introduce-bigarrow" src="./images/arrow_big.svg" alt="big-arrow"> PORTFOLIO
+          </h2>
+        </div>
+        <h3 class="main-introduce-intro">
+          IT SHOWS A CREATIVE JOURNEY
+          <br> FROM CONCEPT TO COMPLETION
+        </h3>
+        <p class="main-introduce-exploring">
+          <a href="#">Exploring a portfolio</a>
+        </p>
+        <p class="main-scroll">
+          SCROLL DOWN
+        </p>
+      </div>
+    </div>
+
+
+    <!-- main-project -->
+    
+    <section class="main-project margin-lg pa ">
+      <div id="shiningAll1" class="shiningAll"></div>
+      <div class="main-project-title">
+        <h2 class="main-title">PROJECT</h2>
+        <ul class="main-project-title-list">
+          <li class="active"><a href="#">UXUI</a></li>
+          <li><a href="#">Web Publishing</a></li>
+          <li><a href="#">BRAND</a></li>
+          <li><a href="#">EDITORIAL</a></li>
+        </ul>
+      </div>
+
+
+      <div class="section-group section-group--horizontal section-group--horizontal-left section-group--4  section">
+        
+        <section class="section section--6">
+          <a href="#">
+            <div class="main-project-list-wrapper">
+              <div class="main-project-list-logo project-1">프로젝트로고</div>
+              <div class="main-project-list-introduce">
+                <h3>런모션</h3>
+                <p>
+                  <span>개인작업</span>
+                  <br>2023.03.11 - 2023.08.30
+                </p>
+                <img src="https://placehold.co/30x30" alt="figma">
+              </div>
+            </div>
+            <img src="./images/project_uxui_1.jpg" class="project-img" alt="런모션">
+          </a>
+        </section>
+
+
+        <section class="section section--7">
+          <a href="#">
+            <div class="main-project-list-wrapper">
+              <div class="main-project-list-logo">프로젝트로고</div>
+              <div class="main-project-list-introduce">
+                <h3>부모로와</h3>
+                <p>
+                  <span>개인작업</span>
+                  <br>2023.03.11 - 2023.08.30
+                </p>
+                <img src="https://placehold.co/30x30" alt="figma">
+              </div>
+            </div>
+            <img src="https://placehold.co/1017x716" alt="두번째프로젝트임시이미지" class="project-img">
+          </a>
+        </section>
+
+
+        <section class="section section--8">
+          <a href="#">
+            <div class="main-project-list-wrapper">
+              <div class="main-project-list-logo">프로젝트로고</div>
+              <div class="main-project-list-introduce">
+                <h3>런모션</h3>
+                <p>
+                  <span>내캘린더</span>
+                  <br>2024.09.10 - 2023.10.16
+                </p>
+                <img src="https://placehold.co/30x30" alt="figma">
+              </div>
+            </div>
+            <img src="https://placehold.co/1017x716" alt="세번째프로젝트임시이미지" class="project-img">
+          </a>
+        </section>
+
+      </div>
+
+
+      <ul class="main-project-list-uxui flex-container">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+    </section>
+
+    <!-- main-skill -->
+    <section class="main-skill margin-lg">
+      <div id="shiningAll2" class="shiningAll"></div>
+      <h2 class="main-title flex-container">SKILLS</h2>
+      <ul class="main-skill-list">
+        <li class="main-skill-list-wrapper"><a href="#" class="grid-container">
+            <strong>01</strong><span class="main-skill-list-title">HTML5 & CSS3</span>
+            <div id="shining2-1" class="shininglist"></div>
+            <ul class="main-skill-list-info">
+              <li>웹 접근성을 고려한 시맨틱 마크업</li>
+              <li>미디어쿼리를 이용한 반응형 웹</li>
+              <li>css를 이용한 스타일의 다양한 활용</li>
+              <li>scss</li>
+            </ul>
+          </a></li>
+        <li class="main-skill-list-wrapper"><a href="#" class="grid-container">
+            <strong>02</strong><span class="main-skill-list-title">JavaScript & jQuery</span>
+            <div id="shining2-2" class="shininglist"></div>
+            <ul class="main-skill-list-info">
+              <li>ES6+ 문법</li>
+              <li>DOM, BOM</li>
+              <li>변수 및 함수의 유효 범위, 호이스팅, event.target 등의 실행 컨텍스트 이해</li>
+              <li>효율적인 웹페이지 동작을 위한 비동기 처리 이해 및 활용</li>
+              <li>- 비동기 함수(setTimeout, setInterval 등) 실행 순서 관리를 위한 이벤트 루프의 이해</li>
+              <li>- 비동기 통신 AJAX 활용 : $.ajax(), fetch, async/await를 이용한 데이터 처리 및 통신 구현 및 작업의 효율성 향상(오류 처리 및 디버깅, 코드의 가독성)
+              </li>
+            </ul>
+          </a>
+        </li>
+        <li class="main-skill-list-wrapper"><a href="#" class="grid-container">
+            <strong>03</strong><span class="main-skill-list-title">GSAP</span>
+            <div id="shining2-3" class="shininglist"></div>
+          </a></li>
+        <li class="main-skill-list-wrapper"><a href="#" class="grid-container">
+            <strong>04</strong><span class="main-skill-list-title">React</span>
+            <div id="shining2-4" class="shininglist"></div>
+            <ul class="main-skill-list-info">
+              <li>css-modules, Styled-Component, Bootstrap</li>
+            </ul>
+          </a></li>
+        <li class="main-skill-list-wrapper"><a href="#" class="grid-container">
+            <strong>05</strong><span class="main-skill-list-title">ETC</span>
+            <div id="shining2-5" class="shininglist"></div>
+            <ul class="main-skill-list-info">
+              <li>UI 디자인, Lottie Animation</li>
+            </ul>
+          </a></li>
+        <li class="main-skill-list-wrapper"><a href="#" class="grid-container">
+            <strong>06</strong><span class="main-skill-list-title">Tool</span>
+            <div id="shining2-6" class="shininglist"></div>
+            <ul class="main-skill-list-info">
+              <li>Git, Github</li>
+              <li>Figma - 프로토타입 제작</li>
+              <li>photoshop & illustrator & indesign</li>
+              <li>AfterEffects & Premiere Pro</li>
+              <li>Cinema4D </li>
+            </ul>
+          </a></li>
+      </ul>
+    </section>
+
+
+    <!-- main-aboutme -->
+    <section class="main-aboutme margin-lg">
+      <div id="shiningAll3" class="shiningAll"></div>
+      <h2 class="main-title">ABOUT ME</h2>
+
+      <div class="main-aboutme-wrapper grid-container">
+        <img class="main-title-icon" src="./images/shinig-line.svg" alt="shining-line">
+        <ul class="main-aboutme-list">
+          <li class="flex-container">
+            <div id="shining2-7" class="shininglist"></div>
+            <p>성실한</p>
+          </li>
+          <li class="flex-container">
+            <div id="shining2-8" class="shininglist"></div>
+            <p>꾸준한</p>
+          </li>
+          <li class="flex-container">
+            <div id="shining2-9" class="shininglist"></div>
+            <p>시간엄수</p>
+          </li>
+        </ul>
+        <img src="./images/aboutme.png" alt="내사진">
+        <p class="main-aboutme-info">
+          순간을 세심하게 디자인하는 <strong>디자이너 나희선 입니다.</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- main-experience -->
+    <section class="main-experience margin-lg">
+      <div id="shiningAll4" class="shiningAll"></div>
+      <h2 class="main-title">EXPERIENCE</h2>
+      <div class="main-experience-list ">
+        <ul class="main-experience-list-info grid-container">
+          <li class="list1">
+            <p>2022-10 - 2022.12</p>
+            <strong>대학교 졸업준비위원회</strong>
+          </li>
+          <li class="list2">
+            <p>2022.06 - 2022.12</p>
+            <strong>산학공동체 프로젝트 참여</strong>
+          </li>
+          <li class="list3">
+            <p>2022.07</p>
+            <strong>시하기획 편집디자이너 현장실습</strong>
+          </li>
+          <li class="list4">
+            <p>2021.07 - 2021.12</p>
+            <strong>unlook 산학 공동 프로젝트 브랜드 및 굿즈 디자인</strong>
+          </li>
+          <li class="list5">
+            <p>2021.07</p>
+            <strong>경기상상캠퍼스 디자인 1978 관람객 안내 및 관리 봉사</strong>
+          </li>
+          <li class="list6">
+            <p>2019.03</p>
+            <strong>3.1절 평화군 청소년 독립만세 재현 캠페인</strong>
+          </li>
+          <li class="list7">
+            <p>2018.10</p>
+            <strong>2018 정조효문화제 - 그림그리기 스텝 참여</strong>
+          </li>
+          <li class="list8">
+            <p>2018.04 - 2018.10</p>
+            <strong>화성시 복지소식지 캐릭터 만화디자인</strong>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- main-license -->
+    <section class="main-license margin-lg">
+      <div id="shiningAll5" class="shiningAll"></div>
+      <h2 class="main-title">LICENSE</h2>
+      <ul class="main-license-list grid-container">
+        <li class="flex-container"><strong>컴퓨터 그래픽스 운용기능사</strong>
+          <p>2019.09</p>
+        </li>
+        <li class="flex-container"><strong>ACP 포토샵, <br>일러스트, <br>인디자인</strong>
+          <p>2023.02</p>
+        </li>
+        <li class="flex-container"><strong>ITQ 아래한글,<br>한글엑셀 A등급</strong>
+          <p>2013.09<br>2012.11</p>
+        </li>
+        <li class="flex-container"><strong>전자출판기능사</strong>
+          <p>2019.07</p>
+        </li>
+        <li class="flex-container"><strong>GTQ 포토샵,<br>일러스트 1급</strong>
+          <p>2017.08<br>2022.03</p>
+        </li>
+        <li class="flex-container"><strong>운전면허<br>2종 보통</strong>
+          <p>2024.06</p>
+        </li>
+        <li class="flex-container">
+          <div class="main-license-list-icon"></div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer padding-lg ">
+    <a href="https://small-slug-1ef.notion.site/12358b8e394380f3b004f47d72bd5586?pvs=4" target="_blank">
+      <div class="lottie-img-footer" id="rabbit2"></div>
+    </a>
+    <div class="footer-info">
+      <p>contact</p>
+      <h3>skgmltjs01@naver.com</h3>
+      <ul class="footer-info-list">
+        <li><a href="https://github.com/Heeseon1215" target="_blank">github <img src="./images/arrow_next.svg"
+              alt="화살표"></a></li>
+        <li><a href="https://github.com/Heeseon1215/study" target="_blank">기록일지 <img src="./images/arrow_next.svg"
+              alt="화살표"></a></li>
+        <li><a href="https://www.notion.so/STUDY-RECORD-12d58b8e39438079bce4d47de934e2ca" target="_blank">study <img
+              src="./images/arrow_next.svg" alt="화살표"></a></li>
+      </ul>
+    </div>
+    <div class="name-wrapper ">
+      <p class="name">NA HEE SEON</p>
+    </div>
+  </footer>
+
+  <!-- lottie 스크립트 -->
+  <script>
+
+    // shining2
+
+    // 함수로 Lottie 애니메이션을 로드 및 재사용
+    function loadLottieAnimation(shining2) {
+      lottie.loadAnimation({
+        container: document.getElementById(shining2),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './images/lottie_img/shining2.json'
+      });
+    }
+    // 각 컨테이너에 애니메이션 추가
+    loadLottieAnimation('shining2-1');
+    loadLottieAnimation('shining2-2');
+    loadLottieAnimation('shining2-3');
+    loadLottieAnimation('shining2-4');
+    loadLottieAnimation('shining2-5');
+    loadLottieAnimation('shining2-6');
+    loadLottieAnimation('shining2-7');
+    loadLottieAnimation('shining2-8');
+    loadLottieAnimation('shining2-9');
+
+
+    // 함수로 Lottie 애니메이션을 로드 및 재사용
+    function shinging2(shiningAll) {
+      lottie.loadAnimation({
+        container: document.getElementById(shiningAll),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './images/lottie_img/shiny.json'
+      });
+    }
+    // 각 컨테이너에 애니메이션 추가
+    shinging2('shiningAll1');
+    shinging2('shiningAll2');
+    shinging2('shiningAll3');
+    shinging2('shiningAll4');
+    shinging2('shiningAll5');
+
+
+
+    const arrow = lottie.loadAnimation({
+      container: document.getElementById('arrow'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './images/lottie_img/arrow.json'
+    });
+
+    const shinigLine = lottie.loadAnimation({
+      container: document.getElementById('shinigLine'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './images/lottie_img/shiny_line.json'
+    });
+
+    const shinig = lottie.loadAnimation({
+      container: document.getElementById('shinig'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './images/lottie_img/shiny.json'
+    });
+
+    const mouse = lottie.loadAnimation({
+      container: document.getElementById('mouse'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './images/lottie_img/mouse.json'
+    });
+
+    const emotion = lottie.loadAnimation({
+      container: document.getElementById('emotion'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './images/lottie_img/emotion.json'
+    });
+
+    const rabbit = lottie.loadAnimation({
+      container: document.getElementById('rabbit'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './images/lottie_img/rabbit.json'
+    });
+
+    const rabbit2 = lottie.loadAnimation({
+      container: document.getElementById('rabbit2'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './images/lottie_img/rabbit2.json'
+    });
+
+
+    // 스크롤 트리거 플러그인 활성화
+    gsap.registerPlugin(ScrollTrigger);
+
+    function SectionGroup__init() {
+      $(".section-group--horizontal-right").each(function (index, node) {
+        let $group = $(node);
+        let $section = $group.find(" > .section");
+
+        gsap.to($section, {
+          xPercent: 100 * ($section.length - 1),
+          ease: "none",
+          scrollTrigger: {
+            trigger: $group,
+            start: "bottom bottom",
+            end: "+=" + ($section.length - 1) + "00%",
+            pin: true,
+            scrub: true
+          }
+        });
+      });
+
+      $(".section-group--horizontal-left").each(function (index, node) {
+        let $group = $(node);
+        let $section = $group.find(" > .section");
+
+        gsap.to($section, {
+          xPercent: -100 * ($section.length - 1),
+          ease: "none",
+          scrollTrigger: {
+            trigger: $group,
+            start: "bottom bottom",
+            end: "+=" + ($section.length - 1) + "00%",
+            pin: true,
+            scrub: true
+          }
+        });
+      });
+
+      $(".section-group--stack-up").each(function (index, node) {
+        let $group = $(node);
+        let $section = $group.find(" > .section:not(:first-child)");
+
+        $section.each(function (index, node) {
+          let $sectionOne = $(node);
+
+          gsap.to($sectionOne, {
+            ease: "none",
+            scrollTrigger: {
+              trigger: $sectionOne,
+              start: "bottom bottom",
+              pin: $sectionOne.prev(),
+              pinSpacing: false,
+              scrub: true,
+            }
+          });
+        });
+      });
+    }
+
+    SectionGroup__init();
+
+    
+    
+  </script>
+
+</body>
+
+</html>
