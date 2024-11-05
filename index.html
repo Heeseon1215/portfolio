@@ -52,12 +52,16 @@
 
 
 <body>
+  <div id="cursor">
+    <div class="cursor-circle"></div>
+  </div>
+
   <!-- header -->
   <header class="header flex-container padding-lg">
-    <h1 class="logo">logo</h1>
+    <h1 class="logo" cursor-class="link1">logo</h1>
 
     <!-- nav -->
-    <nav class="menu header-nav padding-sm">
+    <nav class="menu header-nav padding-sm" cursor-class="link1">
       <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
       <label class="menu-open-button" for="menu-open">
         <span class="lines line-1"></span>
@@ -80,12 +84,12 @@
   <!-- main-contents -->
   <main>
     <!-- main-introduce -->
-    <div class="main-introduce">
-      <div class="main-introduce-txt ">
-        <div class="main-introduce-txt-wrapper flex-container">
+    <div class="main-introduce" >
+      <div class="main-introduce-txt">
+        <div class="main-introduce-txt-wrapper flex-container" cursor-class="link1">
 
           <!-- WEB PUBLISHER -->
-          <div class="main-introduce-web-wrapper flex-container">
+          <div class="main-introduce-web-wrapper flex-container content">
             <h2 class="main-introduce-web flex-container">
               WEB<span id="arrow" class="main_introduce_arrow"></span>
             </h2>
@@ -95,35 +99,35 @@
           </div>
 
           <!-- UI UX DESIGNER -->
-          <h2 class="main-introduce-uiux flex-container">
+          <h2 class="main-introduce-uiux flex-container content2 ">
             <span id="shinig" class="main_introduce-shining"></span>UX<span id="mouse"
               class="main-introduce-mouse"></span>
             UI<span id="emotion" class="main-introduce-emotion"></span>
           </h2>
-          <h2 class="main-introduce-designer">
+          <h2 class="main-introduce-designer content2">
             DESIGNER
           </h2>
 
           <!-- HEESEON's -->
-          <h2 class="main-introduce-name flex-container">
+          <h2 class="main-introduce-name flex-container content3">
             HEESEON's<span id="rabbit" class="main-introduce-rabbit"></span>
           </h2>
 
           <!-- PORTFOLIO -->
-          <h2 class="main-introduce-portfolio">
+          <h2 class="main-introduce-portfolio content4">
             <img class="main-introduce-bigarrow" src="./images/arrow_big.svg" alt="big-arrow"> PORTFOLIO
           </h2>
         </div>
-        <h3 class="main-introduce-intro">
+        <h3 class="main-introduce-intro content5">
           IT SHOWS A CREATIVE JOURNEY
           <br> FROM CONCEPT TO COMPLETION
         </h3>
-        
-        <div class="main-introduce-exploring button-list">
-          <button>Exploring&nbspa&nbsp  portfolio</button>
-          </div>
 
-        <p class="main-scroll">
+        <div class="main-introduce-exploring button-list content6 " cursor-class="link1">
+          <button>Exploring&nbspa&nbsp portfolio</button>
+        </div>
+
+        <p class="main-scroll content6">
           SCROLL DOWN
         </p>
       </div>
@@ -427,11 +431,16 @@
     </div>
   </footer>
 
-  <!-- lottie 스크립트 -->
+
+
+
+
+
+
+ 
   <script>
-
+ //lottie 스크립트
     // shining2
-
     // 함수로 Lottie 애니메이션을 로드 및 재사용
     function loadLottieAnimation(shining2) {
       lottie.loadAnimation({
@@ -603,9 +612,107 @@
     });
 
 
-      document.querySelectorAll('button').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
- 
 
+    // 버튼
+    document.querySelectorAll('button').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
+
+    // 커서
+
+    const MOUSE_POSITION = { x: -100, y: -100 }; // 마우스 포인터의 좌표
+    const CURSOR_POSITION = { x: 0, y: 0 }; // 커서의 좌표
+    const SPEED = 0.1; // 따라가는 속도 (0 ~ 1 사이의 값)
+
+    const cursor = document.querySelector('#cursor');
+    const cursorCircle = cursor.querySelector('.cursor-circle');
+
+    const updateCoordinates = e => {
+      MOUSE_POSITION.x = e.clientX;
+      MOUSE_POSITION.y = e.clientY;
+    }
+
+    function getAngle(diffX, diffY) {
+      return Math.atan2(diffY, diffX) * 180 / Math.PI;
+    }
+
+    function getSqueeze(diffX, diffY) {
+      const distance = Math.sqrt(
+        Math.pow(diffX, 2) + Math.pow(diffY, 2)
+      );
+
+      const maxSqueeze = 1; // 원이 찌그러질 수 있는 수치의 최대값 설정 (낮게 설정하면 그 설정값 이상으로는 뭉개지지 않음)
+      const accelerator = 1000; // 원의 찌그러짐 수치 설정 (낮을수록 많이 찌그러짐)
+
+      return Math.min(distance / accelerator, maxSqueeze);
+    }
+
+
+    const updateCursor = () => {
+      const diffX = Math.round(MOUSE_POSITION.x - CURSOR_POSITION.x);
+      const diffY = Math.round(MOUSE_POSITION.y - CURSOR_POSITION.y);
+
+      CURSOR_POSITION.x += diffX * SPEED;
+      CURSOR_POSITION.y += diffY * SPEED;
+
+      const angle = getAngle(diffX, diffY);
+      const squeeze = getSqueeze(diffX, diffY);
+
+      // const scale = 'scale(' + (1 + squeeze) + ', ' + (1 - squeeze) +')';
+      const scale = `scale(${1 + squeeze}, ${1 - squeeze})`;
+
+      // const rotate = 'rotate(' + angle +'deg)';
+      const rotate = `rotate(${angle}deg)`;
+
+      // const translate = 'translate3d(' + CURSOR_POSITION.x + 'px ,' + CURSOR_POSITION.y + 'px, 0)';
+      const translate = `translate3d(${CURSOR_POSITION.x}px, ${CURSOR_POSITION.y}px, 0`;
+
+      cursor.style.transform = translate;
+      cursorCircle.style.transform = rotate + scale;
+    };
+
+
+    // 링크별 클래스 제어 추가
+    const cursorModifiers = document.querySelectorAll('[cursor-class]');
+    onCursorToggle(cursorModifiers);
+
+    function onCursorToggle(cursorModifiers) {
+      cursorModifiers.forEach(cursorModifier => {
+        cursorModifier.addEventListener('mouseenter', function () {
+          const className = this.getAttribute('cursor-class');
+          cursor.classList.add(className);
+        });
+
+        cursorModifier.addEventListener('mouseleave', function () {
+          const className = this.getAttribute('cursor-class');
+          cursor.classList.remove(className);
+        });
+      });
+    }
+
+
+    // 모바일 환경일때는 실행 중지
+    function checkMobile() {
+      const user = navigator.userAgent;
+      if (user.indexOf("iPhone") > -1 || user.indexOf("Android") > -1) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+
+    // 실행
+    function cursorLoop() {
+      const isMobile = checkMobile();
+      if (!isMobile) {
+        window.addEventListener('mousemove', updateCoordinates);
+        updateCursor();
+        requestAnimationFrame(cursorLoop);
+      } else {
+        cursor.style.display = 'none';
+      }
+    }
+
+    requestAnimationFrame(cursorLoop);
 
 
 

@@ -71,9 +71,74 @@ html ::selection {
 
 /* 스크롤바 */
 
-/* * {
-  cursor: url(../../images/cursor-01.png) 2 2, auto;
-} */
+
+
+/* 커서 */
+ * {
+  cursor: url(../../images/cursor.png) 2 2, auto;
+} 
+
+
+/* 커서 커스텀 */
+#cursor {
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  will-change: transform;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .cursor-circle {
+    width: 56px;
+    height: 56px;
+    margin-top: -50%;
+    margin-left: -50%;
+    border-radius: 50%;
+    border: 1.5px solid #FF4B1E;
+    opacity: 0.8;
+    transition:
+      opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      border-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      width 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  #cursor.link1 .cursor-circle, #cursor.link2 .cursor-circle, #cursor.link3 .cursor-circle, #cursor.link4 .cursor-circle {
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+  }
+  
+  #cursor.link1 .cursor-circle,
+  #cursor.link2 .cursor-circle,
+  #cursor.link3 .cursor-circle,
+  #cursor.link4 .cursor-circle
+   {
+    background-color: var(--color-primary); 
+    border-color: var(--color-primary);
+  }
+ 
+  #cursor.link1::after, #cursor.link2::after, #cursor.link3::after, #cursor.link4::after {
+    content: '';
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
+
+
+
+
+
+
 
 /* flex 및 grid */
 .flex-container {

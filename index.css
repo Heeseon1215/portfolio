@@ -8,6 +8,41 @@ body {
   display:flex;
 }
 
+
+/* 메인 시작하면 스르륵 올라오는 효과 */
+.content { position: relative; animation: fade_up 1s; }
+@keyframes fade_up {
+	0% { opacity: 0; transform: translateY(100%); }
+	to { opacity: 1; transform: translateY(0); }
+}
+.content2 { position: relative; animation: fade_up 1.3s; }
+@keyframes fade_up {
+	0% { opacity: 0; transform: translateY(100%); }
+	to { opacity: 1; transform: translateY(0); }
+}
+.content3 { position: relative; animation: fade_up 1.6s; }
+@keyframes fade_up {
+	0% { opacity: 0; transform: translateY(100%); }
+	to { opacity: 1; transform: translateY(0); }
+}
+.content4 { position: relative; animation: fade_up 1.9s; }
+@keyframes fade_up {
+	0% { opacity: 0; transform: translateY(100%); }
+	to { opacity: 1; transform: translateY(0); }
+}
+.content5 { position: relative; animation: fade_up 2.1s; }
+@keyframes fade_up {
+	0% { opacity: 0; transform: translateY(100%); }
+	to { opacity: 1; transform: translateY(0); }
+}
+.content6 { position: relative; animation: fade_up 2.1s; }
+@keyframes fade_up {
+	0% { opacity: 0; transform: translateY(100%); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+
+
 /**** main-contents ****/
 .main-introduce {
   margin: 0 auto;

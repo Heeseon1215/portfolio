@@ -42,7 +42,7 @@
 
 .menu-item,
 .menu-open-button{
-  height: 70px;
+  height: 80px;
   top: 0;
   position: absolute;
   -webkit-transform: translate3d(0, 0, 0);
@@ -75,21 +75,30 @@
 }
 
 .line-1 {
-  transform: translate3d(0, -8px, 0);
-  width: 18px;
-  height: 3px;
+  transform: translate3d(-6px, -8px, 0);
+  width: 20px;
+  height: 2px;
 }
 .line-2 {
   transform: translate3d(0, 0, 0);
   width: 25px;
-  height: 3px;
+  height: 2px;
 }
 .line-3 {
-  transform: translate3d(8px, 8px, 0);
-  width: 18px;
-  height: 3px;
+  transform: translate3d(6px, 8px, 0);
+  width: 20px;
+  height: 2px;
 }
 
+.menu-open-button:hover .line-1
+{
+  transform: translate3d(0, -8px, 0);
+  width: 25px;
+}
+.menu-open-button:hover .line-3 {
+  width: 25px;
+  transform: translate3d(0, 8px, 0);
+}
 
 .menu-open:checked + .menu-open-button .line-1 {
   width: 25px;
@@ -131,9 +140,12 @@
 
 }
 
+
+
 .menu-open-button:hover {
   -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
   transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+  
 }
 
 .menu-open:checked + .menu-open-button {
@@ -155,77 +167,50 @@
   transition-duration: 480ms;
   -webkit-transition-duration: 480ms;
   font-size: var(--font-main-title-rg);
-  transform: translateX(-56vh);
+  transform: translateX(-560px);
 }
 
 .menu-open:checked ~ .menu-item:nth-child(4) {
   transition-duration: 580ms;
   -webkit-transition-duration: 580ms;
   font-size: var(--font-main-title-rg);
-  transform: translateX(-46vh);
+  transform: translateX(-460px);
 }
 
 .menu-open:checked ~ .menu-item:nth-child(5) {
   transition-duration: 680ms;
   -webkit-transition-duration: 680ms;
   font-size: var(--font-main-title-rg);
-  transform: translateX(-33vh);
+  transform: translateX(-350px);
 }
 .menu-open:checked ~ .menu-item:nth-child(6) {
   transition-duration: 680ms;
   -webkit-transition-duration: 680ms;
   font-size: var(--font-main-title-rg);
-  transform: translateX(-23vh);
+  transform: translateX(-230px);
 }
 .menu-open:checked ~ .menu-item:nth-child(7) {
   transition-duration: 680ms;
   -webkit-transition-duration: 680ms;
   font-size: var(--font-main-title-rg);
-  transform: translateX(-10vh);
+  transform: translateX(-100px);
 }
 
 .menu-item {
   text-align: center;
+  width: 100px;
+  text-decoration: underline 3px transparent;
+  transition: 0.3s;
+  text-underline-offset: 5px;
 }
 
 .menu-item:hover{
-  font-weight: 900;
-  /* transform: translateY(-30px); */
-  background-color: var(--color-primary);
+  text-decoration: underline 3px var(--color-primary);
+  text-underline-offset: 5px;
+  transform: translateX(30px);
+  
 }
 
-
-
-
-.header .header-nav .global-menu li:last-child {
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
-  border-radius: 20px;
-  position: relative;
-}
-.header .header-nav .global-menu li:last-child a {
-  display: block;
-  padding: 5px 15px;
-}
-
-/* github 고양이 귀 */
-.header .header-nav .global-menu li:last-child::before,
-.header .header-nav .global-menu li:last-child::after {
-  content: "";
-  border-top: 12px solid;
-  border-left: 10px solid rgba(0, 0, 0, 0);
-  border-right: 10px solid rgba(0, 0, 0, 0);
-  color: var(--color-primary);
-  transform: rotate(-180deg);
-  position: absolute;
-  bottom: 32px;
-}
-.header .header-nav .global-menu li:last-child::before {
-  left : 22px;
-}
-.header .header-nav .global-menu li:last-child::after {
-  right : 22px;
-}
 
 /**** footer ****/
 .footer {
