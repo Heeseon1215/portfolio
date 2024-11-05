@@ -57,9 +57,10 @@
 }
 
 /**** global style ****/
-/* 부드러운 스크롤 */
+/* 부드러운 스크롤 및 커서 */
 html {
   scroll-behavior: smooth;
+
 }
 
 /* 드래그 */
@@ -70,6 +71,9 @@ html ::selection {
 
 /* 스크롤바 */
 
+/* * {
+  cursor: url(../../images/cursor-01.png) 2 2, auto;
+} */
 
 /* flex 및 grid */
 .flex-container {
