@@ -74,9 +74,13 @@ html ::selection {
 
 
 /* 커서 */
- * {
+ body {
   cursor: url(../../images/cursor.png) 2 2, auto;
 } 
+
+footer {
+  cursor: url(../../images/cursor2-01.png) 2 2, auto;
+}
 
 
 /* 커서 커스텀 */
@@ -111,13 +115,16 @@ html ::selection {
     opacity: 0.5;
   }
   
-  #cursor.link1 .cursor-circle,
-  #cursor.link2 .cursor-circle,
-  #cursor.link3 .cursor-circle,
-  #cursor.link4 .cursor-circle
+  #cursor.link1 .cursor-circle
    {
     background-color: var(--color-primary); 
     border-color: var(--color-primary);
+  }
+ 
+  #cursor.link2 .cursor-circle
+   {
+    background-color: var(--color-secondary); 
+    border-color: var(--color-secondary);
   }
  
   #cursor.link1::after, #cursor.link2::after, #cursor.link3::after, #cursor.link4::after {

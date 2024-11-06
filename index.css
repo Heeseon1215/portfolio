@@ -42,7 +42,6 @@ body {
 }
 
 
-
 /**** main-contents ****/
 .main-introduce {
   margin: 0 auto;
@@ -279,16 +278,19 @@ button.reverse:hover span {
   font-size: var(--font-main-title-rg );
   color: var(--color-primary-second);
   width: 200px;
+  font-size: var(--font-main-title-md );
+  font-family: var(--font-main-en);
 }
 .main-project .main-project-title .main-project-title-list .active {
-  font-size: var(--font-main-title-md );
-  text-decoration: underline;
   color: var(--color-primary);
 }
 
 .main-project .main-project-title .main-project-title-list li a {
   display: block;
   padding: var(--spacing-xxsm);
+  transition: 0.5s;
+  transform: translateX(0);
+  margin-bottom: 10px;
 }
 
 .main-project .main-project-title .main-project-title-list li:hover a {
@@ -297,7 +299,9 @@ button.reverse:hover span {
 
   border-radius: 100px;
   font-weight: 500;
+  transform: translateX(10px);
 }
+
 
 /* project-list */
 
@@ -321,13 +325,49 @@ button.reverse:hover span {
   text-indent: -9999px;
 }
 .project-1 {
-  background: coral;
+  background: url(./images/project_uxui_1_logo.svg) no-repeat 50% / 100%;
+
 }
+
+
 .project-2 {
-  background: coral;
+  background: url(./images/project_uxui_1_logo2.svg) no-repeat 50% / 100%;
 }
+
+.project-list-2 {
+  color: var(--color-primary);
+}
+
+
+
 .project-3 {
   background: coral;
+}
+
+
+.main-project-list-wrapper {
+  width: 100%; height: 100%;
+  text-align: right;
+  flex-direction: column;
+  display: flex;
+  font-family: var(--font-main-ko);
+  color: var(--color-secondary);
+  line-height: 1.5rem;
+ 
+}
+
+.main-project-list-wrapper .main-project-list-introduce {
+  margin-top: auto ;
+}
+
+.main-project-list-wrapper .main-project-list-introduce h3 {
+  font-size: var(--font-main-title-xlg);
+  font-weight: 800;
+  line-height: 4rem;
+}
+
+.main-project-list-wrapper .main-project-list-introduce p {
+  margin-bottom: 10px;
 }
 
 
@@ -519,6 +559,19 @@ button.reverse:hover span {
   font-size: var(--font-main-title-md);
   font-weight: 500;
 }
+
+/* order 순서 */
+.main-experience .list1 {order: 1;}
+.main-experience .list2 {order: 2;}
+.main-experience .list3 {order: 3;}
+.main-experience .list4 {order: 4;}
+.main-experience .list5 {order: 8;}
+.main-experience .list6 {order: 7;}
+.main-experience .list7 {order: 6;}
+.main-experience .list8 {order: 5;}
+
+
+
 
 /**** main-license ****/
 .main-license .main-license-list {

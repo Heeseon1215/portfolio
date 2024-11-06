@@ -42,7 +42,7 @@
 
 .menu-item,
 .menu-open-button{
-  height: 80px;
+  height: 70px;
   top: 0;
   position: absolute;
   -webkit-transform: translate3d(0, 0, 0);
@@ -213,11 +213,13 @@
 
 
 /**** footer ****/
+
 .footer {
   background-color: var(--color-primary);
   color: var(--color-secondary);
   margin-top: var(--spacing-md);
   flex-direction: column;
+  height: 90vh;
 }
 .footer .lottie-img-footer {
   width: 70px;
