@@ -1,0 +1,30 @@
+@charset "utf-8"; 
+
+.project-title{
+      height: 90vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      
+}
+
+
+
+.pproject-title .project-title-wrapper .project-title-design-wrapper{
+
+}
+
+.project-title .project-title-big-name {
+      position: absolute;
+      bottom: 5vh;
+      font-family: var(--font-main-en);
+      font-weight: 900;
+      font-size: 250px;
+      line-height: 0.8;
+      color: rgba(255, 156, 58, 0.1);
+      z-index: -1;
+}
+
+.project-title .project-title-img img {
+      width: 600px;
+}
