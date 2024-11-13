@@ -43,18 +43,18 @@
   <script src="./assets/scripts/lottie.min.js"></script>
 
   <!-- js -->
-  <script src="./assets/scripts/jquery.min.js"></script>
+  <script src="./assets/scripts/jquery-3.7.1.min.js"></script>
   <script src="./assets/scripts/gsap.min.js"></script>
   <script src="./assets/scripts/ScrollTrigger.min.js"></script>
+
+  <script defer src="./assets/scripts/index.js"></script>
 
 
 </head>
 
 
 <body>
-  <div id="cursor">
-    <div class="cursor-circle"></div>
-  </div>
+
 
   <!-- header -->
   <header class="header flex-container padding-lg">
@@ -62,29 +62,26 @@
 
     <!-- nav -->
     <nav class="menu header-nav padding-sm" cursor-class="link1">
-      <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+      <input type="checkbox" class="menu-open" name="menu-open" id="menu-open" >
       <label class="menu-open-button" for="menu-open">
         <span class="lines line-1"></span>
         <span class="lines line-2"></span>
         <span class="lines line-3"></span>
       </label>
 
-      <a href="#" class="menu-item menu-aboutme"> MAIN </a>
-      <a href="#" class="menu-item menu-aboutme"> PROJECT </a>
-      <a href="#" class="menu-item menu-aboutme"> SKILLS </a>
-      <a href="#" class="menu-item menu-aboutme"> ABOUTME </a>
-      <a href="#" class="menu-item menu-contact">CONTACT </a>
-
+      <a href="#" class="menu-item menu-aboutme">MAIN</a>
+      <a href="#" class="menu-item menu-aboutme">PROJECT</a>
+      <a href="#" class="menu-item menu-aboutme">SKILLS</a>
+      <a href="#" class="menu-item menu-aboutme">ABOUTME</a>
+      <a href="#" class="menu-item menu-contact">CONTACT</a>
+      </nav>
   </header>
-
-
-
 
 
   <!-- main-contents -->
   <main>
     <!-- main-introduce -->
-    <div class="main-introduce" >
+    <div class="main-introduce">
       <div class="main-introduce-txt">
         <div class="main-introduce-txt-wrapper flex-container" cursor-class="link1">
 
@@ -124,7 +121,7 @@
         </h3>
 
         <div class="main-introduce-exploring button-list content6 " cursor-class="link1">
-          <button>Exploring&nbspa&nbsp portfolio</button>
+          <button>Exploring&nbsp;a&nbsp; portfolio</button>
         </div>
 
         <p class="main-scroll content6">
@@ -138,21 +135,40 @@
 
     <section class="main-project margin-lg pa ">
       <div id="shiningAll1" class="shiningAll"></div>
-      <div class="main-project-title" >
+      <div class="main-project-title">
         <h2 class="main-title">PROJECT</h2>
         <ul class="main-project-title-list" cursor-class="link1">
           <li class="active"><a href="#">UXUI</a></li>
           <li><a href="#">Web Publishing</a></li>
-          <!-- <li><a href="#">BRAND</a></li>
-          <li><a href="#">EDITORIAL</a></li> -->
+          <li><a href="#">BRAND</a></li>
+          <!--<li><a href="#">EDITORIAL</a></li> -->
         </ul>
       </div>
 
 
-      <div class="section-group section-group--horizontal section-group--horizontal-left section-group--4 " cursor-class="link1">
+      <div class="section-group section-group--horizontal section-group--horizontal-left section-group--4 "
+        cursor-class="link1">
+
+        <section class="section section--8">
+          <a href="./project/project3/project3.html">
+            <div class="main-project-list-wrapper ">
+              <div class="main-project-list-logo project-3"></div>
+              <div class="main-project-list-introduce project-list-3">
+                <h3>여성생리달력</h3>
+                <p>
+                  <span>팀 프로젝트</span>
+                  <br>2024.09.10 - 2024.10.16
+                </p>
+                <img src="./images/skill-icons_figma.svg" alt="figma">
+                <img src="./images/skill-icons_illust.svg" alt="illust">
+              </div>
+            </div>
+            <img src="./images/project_uxui_3.png" alt="여성생리달력" class="project-img">
+          </a>
+        </section>
 
         <section class="section section--6">
-          <a href="#">
+          <a href="./project/project1/project1.html">
             <div class="main-project-list-wrapper">
               <div class="main-project-list-logo project-1"></div>
               <div class="main-project-list-introduce project-list-1">
@@ -170,7 +186,7 @@
 
 
         <section class="section section--7">
-          <a href="#">
+          <a href="./project/project2/project2.html">
             <div class="main-project-list-wrapper">
               <div class="main-project-list-logo project-2"></div>
               <div class="main-project-list-introduce project-list-2">
@@ -179,7 +195,8 @@
                   <span>개인작업</span>
                   <br>2022.08.30 ~ 2022.12.16
                 </p>
-                <img src="https://placehold.co/30x30" alt="figma">
+                <img src="./images/skill-icons_figma.svg" alt="figma">
+                <img src="./images/skill-icons_illust.svg" alt="figma">
               </div>
             </div>
             <img src="./images/project_uxui_2.png" alt="부모로와" class="project-img">
@@ -187,27 +204,12 @@
         </section>
 
 
-        <section class="section section--8">
-          <a href="#">
-            <div class="main-project-list-wrapper ">
-              <div class="main-project-list-logo project-3"></div>
-              <div class="main-project-list-introduce project-list-3">
-                <h3>런모션</h3>
-                <p>
-                  <span>내캘린더</span>
-                  <br>2024.09.10 - 2023.10.16
-                </p>
-                <img src="https://placehold.co/30x30" alt="figma">
-              </div>
-            </div>
-            <img src="https://placehold.co/1017x716" alt="세번째프로젝트임시이미지" class="project-img">
-          </a>
-        </section>
+  
 
       </div>
 
 
-    
+
     </section>
 
     <!-- main-skill -->
@@ -309,7 +311,7 @@
       <div id="shiningAll3" class="shiningAll"></div>
       <h2 class="main-title">ABOUT ME</h2>
 
-      <div class="main-aboutme-wrapper grid-container" >
+      <div class="main-aboutme-wrapper grid-container">
         <img class="main-title-icon" src="./images/shinig-line.svg" alt="shining-line">
         <ul class="main-aboutme-list">
           <li class="flex-container">
@@ -406,18 +408,19 @@
 
   <!-- footer -->
   <footer class="footer padding-lg ">
-    
-      <div class="lottie-img-footer" id="rabbit2" cursor-class="link2"><a href="https://small-slug-1ef.notion.site/12358b8e394380f3b004f47d72bd5586?pvs=4" target="_blank"></a></div>
+
+    <div class="lottie-img-footer" id="rabbit2" cursor-class="link2"><a
+        href="https://small-slug-1ef.notion.site/12358b8e394380f3b004f47d72bd5586?pvs=4" target="_blank"></a></div>
     <div class="footer-info">
       <p>contact</p>
       <h3>skgmltjs01@naver.com</h3>
       <ul class="footer-info-list">
-        <li cursor-class="link2"><a href="https://github.com/Heeseon1215" target="_blank">github <img src="./images/arrow_next.svg"
-              alt="화살표"></a></li>
-        <li cursor-class="link2"><a href="https://github.com/Heeseon1215/study" target="_blank">기록일지 <img src="./images/arrow_next.svg"
-              alt="화살표"></a></li>
-        <li cursor-class="link2"><a href="https://www.notion.so/STUDY-RECORD-12d58b8e39438079bce4d47de934e2ca" target="_blank">study <img
+        <li cursor-class="link2"><a href="https://github.com/Heeseon1215" target="_blank">github <img
               src="./images/arrow_next.svg" alt="화살표"></a></li>
+        <li cursor-class="link2"><a href="https://github.com/Heeseon1215/study" target="_blank">기록일지 <img
+              src="./images/arrow_next.svg" alt="화살표"></a></li>
+        <li cursor-class="link2"><a href="https://www.notion.so/STUDY-RECORD-12d58b8e39438079bce4d47de934e2ca"
+            target="_blank">study <img src="./images/arrow_next.svg" alt="화살표"></a></li>
       </ul>
     </div>
     <div class="name-wrapper ">
@@ -425,293 +428,11 @@
     </div>
   </footer>
 
+  <!-- cursor -->
+  <div id="cursor">
+    <div class="cursor-circle"></div>
+  </div>
 
-
-
-
-
-
- 
-  <script>
- //lottie 스크립트
-    // shining2
-    // 함수로 Lottie 애니메이션을 로드 및 재사용
-    function loadLottieAnimation(shining2) {
-      lottie.loadAnimation({
-        container: document.getElementById(shining2),
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: './images/lottie_img/shining2.json'
-      });
-    }
-    // 각 컨테이너에 애니메이션 추가
-    loadLottieAnimation('shining2-1');
-    loadLottieAnimation('shining2-2');
-    loadLottieAnimation('shining2-3');
-    loadLottieAnimation('shining2-4');
-    loadLottieAnimation('shining2-5');
-    loadLottieAnimation('shining2-6');
-    loadLottieAnimation('shining2-7');
-    loadLottieAnimation('shining2-8');
-    loadLottieAnimation('shining2-9');
-
-
-    // 함수로 Lottie 애니메이션을 로드 및 재사용
-    function shinging2(shiningAll) {
-      lottie.loadAnimation({
-        container: document.getElementById(shiningAll),
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: './images/lottie_img/shiny.json'
-      });
-    }
-    // 각 컨테이너에 애니메이션 추가
-    shinging2('shiningAll1');
-    shinging2('shiningAll2');
-    shinging2('shiningAll3');
-    shinging2('shiningAll4');
-    shinging2('shiningAll5');
-
-
-
-    const arrow = lottie.loadAnimation({
-      container: document.getElementById('arrow'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: './images/lottie_img/arrow.json'
-    });
-
-    const shinigLine = lottie.loadAnimation({
-      container: document.getElementById('shinigLine'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: './images/lottie_img/shiny_line.json'
-    });
-
-    const shinig = lottie.loadAnimation({
-      container: document.getElementById('shinig'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: './images/lottie_img/shiny.json'
-    });
-
-    const mouse = lottie.loadAnimation({
-      container: document.getElementById('mouse'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: './images/lottie_img/mouse.json'
-    });
-
-    const emotion = lottie.loadAnimation({
-      container: document.getElementById('emotion'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: './images/lottie_img/emotion.json'
-    });
-
-    const rabbit = lottie.loadAnimation({
-      container: document.getElementById('rabbit'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: './images/lottie_img/rabbit.json'
-    });
-
-    const rabbit2 = lottie.loadAnimation({
-      container: document.getElementById('rabbit2'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: './images/lottie_img/rabbit2.json'
-    });
-
-
-    // 스크롤 트리거 플러그인 활성화
-    gsap.registerPlugin(ScrollTrigger);
-
-    function SectionGroup__init() {
-      $(".section-group--horizontal-right").each(function (index, node) {
-        let $group = $(node);
-        let $section = $group.find(" > .section");
-
-        gsap.to($section, {
-          xPercent: 100 * ($section.length - 1),
-          ease: "none",
-          scrollTrigger: {
-            trigger: $group,
-            start: "52% 52%",
-            end: "+=" + ($section.length - 1) + "00%",
-            pin: true,
-            scrub: true
-          }
-        });
-      });
-
-      $(".section-group--horizontal-left").each(function (index, node) {
-        let $group = $(node);
-        let $section = $group.find(" > .section");
-
-        gsap.to($section, {
-          xPercent: -100 * ($section.length - 1),
-          ease: "none",
-          scrollTrigger: {
-            trigger: $group,
-            start: "52% 52%",
-            end: "+=" + ($section.length - 1) + "00%",
-            pin: true,
-            scrub: true
-          }
-        });
-      });
-
-      $(".section-group--stack-up").each(function (index, node) {
-        let $group = $(node);
-        let $section = $group.find(" > .section:not(:first-child)");
-
-        $section.each(function (index, node) {
-          let $sectionOne = $(node);
-
-          gsap.to($sectionOne, {
-            ease: "none",
-            scrollTrigger: {
-              trigger: $sectionOne,
-              start: "52% 52%",
-              pin: $sectionOne.prev(),
-              pinSpacing: false,
-              scrub: true,
-            }
-          });
-        });
-      });
-    }
-
-    SectionGroup__init();
-
-    // 아코디언메뉴
-
-    $(".main-skill-list-wrapper>a").click(function () {
-      let submenu = $(this).next("ul");
-      if (submenu.is(":visible")) {
-        submenu.slideUp();
-      } else {
-        submenu.slideDown();
-      }
-    });
-
-
-
-    // 버튼
-    document.querySelectorAll('button').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
-
-
-
-    // 커서
-    const MOUSE_POSITION = { x: -100, y: -100 }; // 마우스 포인터의 좌표
-    const CURSOR_POSITION = { x: 0, y: 0 }; // 커서의 좌표
-    const SPEED = 0.1; // 따라가는 속도 (0 ~ 1 사이의 값)
-
-    const cursor = document.querySelector('#cursor');
-    const cursorCircle = cursor.querySelector('.cursor-circle');
-
-    const updateCoordinates = e => {
-      MOUSE_POSITION.x = e.clientX;
-      MOUSE_POSITION.y = e.clientY;
-    }
-
-    function getAngle(diffX, diffY) {
-      return Math.atan2(diffY, diffX) * 180 / Math.PI;
-    }
-
-    function getSqueeze(diffX, diffY) {
-      const distance = Math.sqrt(
-        Math.pow(diffX, 2) + Math.pow(diffY, 2)
-      );
-
-      const maxSqueeze = 1; // 원이 찌그러질 수 있는 수치의 최대값 설정 (낮게 설정하면 그 설정값 이상으로는 뭉개지지 않음)
-      const accelerator = 1000; // 원의 찌그러짐 수치 설정 (낮을수록 많이 찌그러짐)
-
-      return Math.min(distance / accelerator, maxSqueeze);
-    }
-
-
-    const updateCursor = () => {
-      const diffX = Math.round(MOUSE_POSITION.x - CURSOR_POSITION.x);
-      const diffY = Math.round(MOUSE_POSITION.y - CURSOR_POSITION.y);
-
-      CURSOR_POSITION.x += diffX * SPEED;
-      CURSOR_POSITION.y += diffY * SPEED;
-
-      const angle = getAngle(diffX, diffY);
-      const squeeze = getSqueeze(diffX, diffY);
-
-      // const scale = 'scale(' + (1 + squeeze) + ', ' + (1 - squeeze) +')';
-      const scale = `scale(${1 + squeeze}, ${1 - squeeze})`;
-
-      // const rotate = 'rotate(' + angle +'deg)';
-      const rotate = `rotate(${angle}deg)`;
-
-      // const translate = 'translate3d(' + CURSOR_POSITION.x + 'px ,' + CURSOR_POSITION.y + 'px, 0)';
-      const translate = `translate3d(${CURSOR_POSITION.x}px, ${CURSOR_POSITION.y}px, 0`;
-
-      cursor.style.transform = translate;
-      cursorCircle.style.transform = rotate + scale;
-    };
-
-
-    // 링크별 클래스 제어 추가
-    const cursorModifiers = document.querySelectorAll('[cursor-class]');
-    onCursorToggle(cursorModifiers);
-
-    function onCursorToggle(cursorModifiers) {
-      cursorModifiers.forEach(cursorModifier => {
-        cursorModifier.addEventListener('mouseenter', function () {
-          const className = this.getAttribute('cursor-class');
-          cursor.classList.add(className);
-        });
-
-        cursorModifier.addEventListener('mouseleave', function () {
-          const className = this.getAttribute('cursor-class');
-          cursor.classList.remove(className);
-        });
-      });
-    }
-
-
-    // 모바일 환경일때는 실행 중지
-    function checkMobile() {
-      const user = navigator.userAgent;
-      if (user.indexOf("iPhone") > -1 || user.indexOf("Android") > -1) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-
-
-    // 실행
-    function cursorLoop() {
-      const isMobile = checkMobile();
-      if (!isMobile) {
-        window.addEventListener('mousemove', updateCoordinates);
-        updateCursor();
-        requestAnimationFrame(cursorLoop);
-      } else {
-        cursor.style.display = 'none';
-      }
-    }
-
-    requestAnimationFrame(cursorLoop);
-
-
-
-  </script>
 
 </body>
 

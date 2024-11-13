@@ -338,10 +338,12 @@ button.reverse:hover span {
   color: var(--color-primary);
 }
 
-
-
 .project-3 {
-  background: coral;
+  background: url(./images/project_uxui_3_logo.svg) no-repeat 50% / 100%;
+}
+
+.project-list-3 {
+  color: var(--color-primary);
 }
 
 
@@ -368,6 +370,10 @@ button.reverse:hover span {
 
 .main-project-list-wrapper .main-project-list-introduce p {
   margin-bottom: 10px;
+}
+
+.main-project-list-wrapper .main-project-list-introduce img{
+  margin: 0 5px;
 }
 
 
