@@ -166,6 +166,12 @@ footer {
 .margin-lg {
   margin: 0 var(--spacing-lg);
 }
+.margin-xlg {
+  margin: 0 var(--spacing-xlg);
+}
+.margin-xxlg {
+  margin: 0 var(--spacing-xxlg);
+}
 
 
 .padding-sm {

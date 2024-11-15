@@ -205,17 +205,16 @@
     <div class="project-designsystem-wrapper">
       <div class="project-designsystem-title">
         <h4>TYPOGRAPHY</h4>
-        <strong>TITLE</strong>
         <p>Pretendard</p>
         <h3>내 캘린더</h3>
       </div>
       <div class="project-designsystem-border">
         <h4>BORDER</h4>
-        <div class="project-designsystem-border-box1">
+        <div class="project-designsystem-border-box1 border-box">
           <p>Round:16px<br>주요 컨텐츠 상자</p>
         </div>
-        <div class="project-designsystem-border-box2">
-          <p>Round:21px<br>Button</p>
+        <div class="project-designsystem-border-box2 border-box">
+          <p>Round:32px<br>Button</p>
         </div>
       </div>
       <div class="project-designsystem-color">
@@ -250,8 +249,8 @@
   </div>
 
   <!-- prototype-title -->
-  <div class="prototype-title">
-    <div class="prototype-title-wrapper">
+  <div class="prototype-title ">
+    <div class="prototype-title-wrapper ">
       <div class="prototype-title-wrapper-txt">
         <p>더 편한 월경 관리 어플</p>
         <strong>여성 생리 달력</strong>
@@ -261,36 +260,68 @@
   </div>
 
   <!-- prototype-home -->
-  <div class="prototype-home">
-    <h2 class="prototype-subject">HOME</h2>
-    <div class="prototype-home-wrapper">
-      <div class="prototype-home-txt">
-        <h3><span>월경주기를 한눈에 확인</span>해서
-          <br>더 손쉽게 월경주기를 관리하세요!
-        </h3>
-        <p>
-          기존의 제공중인 서비스 파악이 어렵고 사용성이 떨어지는 레이아웃을 바꿔
-          <br>사용자가 어플을 더 쉽게 파악하고 이용할 수 있도록 제작했습니다.
-        </p>
+  <div class="prototype-all">
+    <div class="prototype-home padding-lg">
+      <h2 class="prototype-subject">HOME</h2>
+      <div class="prototype-home-wrapper">
+        <div class="prototype-home-txt">
+          <h3><span>월경주기를 한눈에 확인</span>해서
+            <br>더 손쉽게 월경주기를 관리하세요!
+          </h3>
+          <p>
+            기존의 제공중인 서비스 파악이 어렵고 사용성이 떨어지는 레이아웃을 바꿔
+            <br>사용자가 어플을 더 쉽게 파악하고 이용할 수 있도록 제작했습니다.
+          </p>
+        </div>
+
+        <!-- asis-tobe -->
+        <div class="prototype-home-asistobe">
+          <div class="prototype-home-left">
+            <div class="prototype-home-left-ex1">
+              <img src="./images/prototype-home-ex.svg" alt="가임기와 생리일 배란이">
+            </div>
+            <div class="prototype-home-left-ex2">
+              <strong>오늘의 나의 몸상태는?</strong>
+              <p>어플 접속 시 오늘의 상태와 주의 사항에 <br> 대한 안내를 받을 수 있습니다.</p>
+            </div>
+            <div class="prototype-home-left-ex3">
+              <strong>AS-IS</strong>
+              <img src="./images/prototype-home-asis.png" alt="as-is">
+            </div>
+          </div>
+          <div class="prototype-home-center">
+            <strong>TO-BE</strong>
+            <img src="./images/prototype-home-tobe.png" alt="to-be">
+          </div>
+          <div class="prototype-home-right">
+            <div class="prototype-home-right-ex1">
+              <img src="./images/prototype-home-ex2.svg" alt="이번달 주기 예측">
+              <strong>스펙트럼 형태의 주기 예측 그래프</strong>
+              <p>주기 예측 그래프를 통해 이번달 예상주기와 <br> 가임기, 배란일을 한눈에 확인할 수 있습니다.</p>
+            </div>
+            <div class="prototype-home-right-ex2">
+              <strong>내비게이션으로 간편히 이동</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- prototype-report -->
+    <div class="prototype-report padding-lg">
+      <h2 class="prototype-subject">REPORT</h2>
+      <div class="prototype-report-wrapper">
+        <div class="prototype-report-txt">
+          <h3>리포트를 통해 내 상태를 실시간으로 파악하세요!</h3>
+        </div>
+
+        <div class="prototype-report-img">
+
+        </div>
+
       </div>
     </div>
   </div>
-
-  <!-- prototype-report -->
-  <div class="prototype-report">
-    <h2 class="prototype-subject">REPORT</h2>
-    <div class="prototype-report-wrapper">
-      <div class="prototype-report-txt">
-        <h3>리포트를 통해 내 상태를 실시간으로 파악하세요!</h3>
-      </div>
-
-      <div class="prototype-report-img">
-
-      </div>
-
-    </div>
-  </div>
-
 
   <!-- prototype-question -->
   <div class="prototype-question">
@@ -430,27 +461,27 @@
   <!-- prototype-images -->
   <div class="prototype-images"></div>
 
-<!-- footer -->
-<footer class="footer padding-lg">
+  <!-- footer -->
+  <footer class="footer padding-lg">
 
-  <div class="lottie-img-footer" id="rabbit2" cursor-class="link2"><a
-      href="https://small-slug-1ef.notion.site/12358b8e394380f3b004f47d72bd5586?pvs=4" target="_blank"></a></div>
-  <div class="footer-info">
-    <p>contact</p>
-    <h3>skgmltjs01@naver.com</h3>
-    <ul class="footer-info-list">
-      <li cursor-class="link2"><a href="https://github.com/Heeseon1215" target="_blank">github <img
-            src="../../images/arrow_next.svg" alt="화살표"></a></li>
-      <li cursor-class="link2"><a href="https://github.com/Heeseon1215/study" target="_blank">기록일지 <img
-            src="../..//images/arrow_next.svg" alt="화살표"></a></li>
-      <li cursor-class="link2"><a href="https://www.notion.so/STUDY-RECORD-12d58b8e39438079bce4d47de934e2ca"
-          target="_blank">study <img src="../../images/arrow_next.svg" alt="화살표"></a></li>
-    </ul>
-  </div>
-  <div class="name-wrapper ">
-    <p class="name">NA HEE SEON</p>
-  </div>
-</footer>
+    <div class="lottie-img-footer " id="rabbit2" cursor-class="link2"><a
+        href="https://small-slug-1ef.notion.site/12358b8e394380f3b004f47d72bd5586?pvs=4" target="_blank"></a></div>
+    <div class="footer-info">
+      <p>contact</p>
+      <h3>skgmltjs01@naver.com</h3>
+      <ul class="footer-info-list">
+        <li cursor-class="link2"><a href="https://github.com/Heeseon1215" target="_blank">github <img
+              src="../../images/arrow_next.svg" alt="화살표"></a></li>
+        <li cursor-class="link2"><a href="https://github.com/Heeseon1215/study" target="_blank">기록일지 <img
+              src="../..//images/arrow_next.svg" alt="화살표"></a></li>
+        <li cursor-class="link2"><a href="https://www.notion.so/STUDY-RECORD-12d58b8e39438079bce4d47de934e2ca"
+            target="_blank">study <img src="../../images/arrow_next.svg" alt="화살표"></a></li>
+      </ul>
+    </div>
+    <div class="name-wrapper ">
+      <p class="name">NA HEE SEON</p>
+    </div>
+  </footer>
 
 
   <!-- cursor -->
