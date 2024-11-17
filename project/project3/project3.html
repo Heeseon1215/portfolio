@@ -309,16 +309,35 @@
 
     <!-- prototype-report -->
     <div class="prototype-report padding-lg">
-      <h2 class="prototype-subject">REPORT</h2>
-      <div class="prototype-report-wrapper">
-        <div class="prototype-report-txt">
-          <h3>리포트를 통해 내 상태를 실시간으로 파악하세요!</h3>
+      <div class="prototype-reprt-wrapper-wra">
+        <h2 class="prototype-subject">REPORT</h2>
+        <div class="prototype-report-wrapper">
+          <div class="prototype-report-txt">
+            <h3>리포트를 통해 내 상태를 실시간으로 파악하세요!</h3>
+          </div>
+          <div class="prototype-report-center-wrapper">
+            <div class="prototype-report-left">
+              <div class="prototype-report-left-ex1">
+                <strong>사용자 위험 등급 안내</strong>
+                <p>월경 분석을 통해 현재 등급을 파악하고 평균<br> 월경 기간과 주기를 안내해드립니다.</p>
+              </div>
+              <div class="prototype-report-left-ex2">
+                <strong>AS-IS</strong>
+                <img src="./images/prototype-report-asis.png" alt="REPORT-ASIS">
+              </div>
+            </div>
+            <div class="prototype-report-center">
+              <strong>TO-BE</strong>
+              <img src="./images/prototype-report-center.png" alt="report">
+            </div>
+            <div class="prototype-report-right">
+              <strong>보기 편한 그래프</strong>
+              <p>기간과 주기 한눈에 파악 및 변화 체크 가능
+              </p>
+            </div>
+
+          </div>
         </div>
-
-        <div class="prototype-report-img">
-
-        </div>
-
       </div>
     </div>
   </div>
@@ -332,26 +351,28 @@
   <!-- prototype-community -->
   <div class="prototype-community">
     <h2 class="prototype-subject">COMMUNITY</h2>
-  </div>
-  <div class="prototype-community-wrapper">
-    <div class="prototype-community-txt">
-      <h3><span>매거진과 커뮤니티</span>를 통해
-        <br>비밀 이야기를 나눠보세요
-      </h3>
-      <p>
-        누구와도 이야기 하지 못했던 나만의 고민, 알고싶은 정보들
-        <br>이제 고민하지 마시고 여성 생리 달력에서 해결하세요!
-      </p>
-    </div>
 
-    <div class="prototype-community-img">
-      <img src="./images/prototype_community_list.png" alt="커뮤니티리스트">
-      <img src="./images/prototype_community_phon.png" alt="커뮤니티 폰 목업">
-      <img src="./images/prototype_community_mg1.png" alt="커뮤니티 매거진1">
-      <img src="./images/prototype_community_mg2.png" alt="커뮤니티 매거진2">
+    <div class="prototype-community-wrapper">
+      <div class="prototype-community-txt">
+        <h3><span>매거진과 커뮤니티</span>를 통해
+          <br>비밀 이야기를 나눠보세요
+        </h3>
+        <p>
+          누구와도 이야기 하지 못했던 나만의 고민, 알고싶은 정보들
+          <br>이제 고민하지 마시고 여성 생리 달력에서 해결하세요!
+        </p>
+      </div>
+
+      <div class="prototype-community-img">
+        <img src="./images/prototype_community_list.png" alt="커뮤니티리스트">
+        <img src="./images/prototype_community_phon.png" alt="커뮤니티 폰 목업">
+        <div class="prototype-community-img-mg">
+          <img src="./images/prototype_community_mg1.png" alt="커뮤니티 매거진1">
+          <img src="./images/prototype_community_mg2.png" alt="커뮤니티 매거진2">
+        </div>
+      </div>
     </div>
   </div>
-
 
   <!-- prototype-logo -->
   <div class="prototype-logo">
@@ -359,7 +380,7 @@
   </div>
 
   <!-- prototype-review -->
-  <div class="prototype-review">
+  <div class="prototype-review margin-lg">
     <h2 class="project-subject">REVIEW</h2>
     <div class="prototype-review-list-wrapper">
       <ul class="prototype-review-list">
@@ -424,7 +445,7 @@
           <!-- 타이틀 -->
         <li class="main-skill-list-wrapper">
           <a href="#none" class="grid-container">
-            <strong>01</strong>
+            <strong>03</strong>
             <span class="prototype-review-list-title">배운점</span>
             <div id="shining2-3" class="shininglist"></div>
           </a>
@@ -490,7 +511,159 @@
   </div>
 
 
+<script>
+  //lottie 스크립트
+// shining2
+// 함수로 Lottie 애니메이션을 로드 및 재사용
+function loadLottieAnimation(shining2) {
+  lottie.loadAnimation({
+    container: document.getElementById(shining2),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: './images/lottie_img/shining2.json'
+  });
+}
+// 각 컨테이너에 애니메이션 추가
+loadLottieAnimation('shining2-1');
+loadLottieAnimation('shining2-2');
+loadLottieAnimation('shining2-3');
+loadLottieAnimation('shining2-4');
+loadLottieAnimation('shining2-5');
+loadLottieAnimation('shining2-6');
+loadLottieAnimation('shining2-7');
+loadLottieAnimation('shining2-8');
+loadLottieAnimation('shining2-9');
 
+
+// 함수로 Lottie 애니메이션을 로드 및 재사용
+function shinging2(shiningAll) {
+  lottie.loadAnimation({
+    container: document.getElementById(shiningAll),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: './images/lottie_img/shiny.json'
+  });
+}
+// 각 컨테이너에 애니메이션 추가
+shinging2('shiningAll1');
+shinging2('shiningAll2');
+shinging2('shiningAll3');
+shinging2('shiningAll4');
+shinging2('shiningAll5');
+
+
+
+// footer-rabbit
+const rabbit2 = lottie.loadAnimation({
+  container: document.getElementById('rabbit2'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: './images/lottie_img/rabbit2.json'
+});
+
+
+
+
+// 커서
+const MOUSE_POSITION = { x: -100, y: -100 }; // 마우스 포인터의 좌표
+const CURSOR_POSITION = { x: 0, y: 0 }; // 커서의 좌표
+const SPEED = 0.1; // 따라가는 속도 (0 ~ 1 사이의 값)
+
+const cursor = document.querySelector('#cursor');
+const cursorCircle = cursor.querySelector('.cursor-circle');
+
+const updateCoordinates = e => {
+  MOUSE_POSITION.x = e.clientX;
+  MOUSE_POSITION.y = e.clientY;
+}
+
+function getAngle(diffX, diffY) {
+  return Math.atan2(diffY, diffX) * 180 / Math.PI;
+}
+
+function getSqueeze(diffX, diffY) {
+  const distance = Math.sqrt(
+    Math.pow(diffX, 2) + Math.pow(diffY, 2)
+  );
+
+  const maxSqueeze = 1; // 원이 찌그러질 수 있는 수치의 최대값 설정 (낮게 설정하면 그 설정값 이상으로는 뭉개지지 않음)
+  const accelerator = 1000; // 원의 찌그러짐 수치 설정 (낮을수록 많이 찌그러짐)
+
+  return Math.min(distance / accelerator, maxSqueeze);
+}
+
+
+const updateCursor = () => {
+  const diffX = Math.round(MOUSE_POSITION.x - CURSOR_POSITION.x);
+  const diffY = Math.round(MOUSE_POSITION.y - CURSOR_POSITION.y);
+
+  CURSOR_POSITION.x += diffX * SPEED;
+  CURSOR_POSITION.y += diffY * SPEED;
+
+  const angle = getAngle(diffX, diffY);
+  const squeeze = getSqueeze(diffX, diffY);
+
+  // const scale = 'scale(' + (1 + squeeze) + ', ' + (1 - squeeze) +')';
+  const scale = `scale(${1 + squeeze}, ${1 - squeeze})`;
+
+  // const rotate = 'rotate(' + angle +'deg)';
+  const rotate = `rotate(${angle}deg)`;
+
+  // const translate = 'translate3d(' + CURSOR_POSITION.x + 'px ,' + CURSOR_POSITION.y + 'px, 0)';
+  const translate = `translate3d(${CURSOR_POSITION.x}px, ${CURSOR_POSITION.y}px, 0`;
+
+  cursor.style.transform = translate;
+  cursorCircle.style.transform = rotate + scale;
+};
+
+
+// 링크별 클래스 제어 추가
+const cursorModifiers = document.querySelectorAll('[cursor-class]');
+onCursorToggle(cursorModifiers);
+
+function onCursorToggle(cursorModifiers) {
+  cursorModifiers.forEach(cursorModifier => {
+    cursorModifier.addEventListener('mouseenter', function () {
+      const className = this.getAttribute('cursor-class');
+      cursor.classList.add(className);
+    });
+
+    cursorModifier.addEventListener('mouseleave', function () {
+      const className = this.getAttribute('cursor-class');
+      cursor.classList.remove(className);
+    });
+  });
+}
+
+
+// 모바일 환경일때는 실행 중지
+function checkMobile() {
+  const user = navigator.userAgent;
+  if (user.indexOf("iPhone") > -1 || user.indexOf("Android") > -1) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+// 실행
+function cursorLoop() {
+  const isMobile = checkMobile();
+  if (!isMobile) {
+    window.addEventListener('mousemove', updateCoordinates);
+    updateCursor();
+    requestAnimationFrame(cursorLoop);
+  } else {
+    cursor.style.display = 'none';
+  }
+}
+
+requestAnimationFrame(cursorLoop);
+</script>
 
 </body>
 
