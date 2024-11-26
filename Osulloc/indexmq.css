@@ -111,8 +111,9 @@
     transform: translateX(0);
     width: 0%;
     height: 2px;
-    background-color: var(--color-primary-second);
+    background-color: var(--color-primary);
     transition: 0.5s;
+    border-radius: 2px;
   }
 
 
@@ -339,18 +340,9 @@
   }
 
   
-  .main-teafield .main-teafield-type .main-teafield-type1:hover {
-    background-size: 300px 150px;
-  }
-
-  .main-teafield .main-teafield-type .main-teafield-type2:hover{
-    background-size: 300px 150px;
-  }
-
-  .main-teafield .main-teafield-type .main-teafield-type3:hover{
-    background-size: 300px 150px;
-  }
-
+  .main-teafield .main-teafield-type .main-teafield-type1:hover  {background-image: url(./images/main-teafield-type1.jpg);}
+  .main-teafield .main-teafield-type .main-teafield-type2:hover{background-image: url(./images/main-teafield-type2.jpg);}
+  .main-teafield .main-teafield-type .main-teafield-type3:hover{background-image: url(./images/main-teafield-type3.jpg);}
 
 
   .main-teafield .main-teafield-type .teafield .main-teafield-title {
@@ -446,6 +438,7 @@
     width: 100%;
     transition: 0.3s;
     transform: scale(1);
+    position: relative;
   }
   .main-together .main-together-sec .idx1 img {
     width: 30vw;
@@ -474,19 +467,42 @@
     grid-column: 6 / 9;
     grid-row: 4 / 7;
   }
-  .main-together .main-together-sec .idx1:hover img {
-    transform: scale(1.05);
-  }
-  .main-together .main-together-sec .idx2:hover img {
-    transform: scale(1.05);
-  }
-  .main-together .main-together-sec .idx3:hover img {
-    transform: scale(1.05);
-  }
-  .main-together .main-together-sec .idx4:hover img {
-    transform: scale(1.05);
-  }
 
+  /* hover */
+.main-together .main-together-sec .idx1:hover img,
+.main-together .main-together-sec .idx2:hover img,
+.main-together .main-together-sec .idx3:hover img,
+.main-together .main-together-sec .idx4:hover img {
+  filter: blur(2px) brightness(0.5);
+  transition: filter 0.3s ease; 
+}
+
+
+.main-together .main-together-sec .idx1:hover::after,
+.main-together .main-together-sec .idx2:hover::after,
+.main-together .main-together-sec .idx3:hover::after,
+.main-together .main-together-sec .idx4:hover::after {
+  content: "Go to Buy";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: var(--font-main-en);
+  transform: translate(-50%, -50%); 
+  font-size: var(--font-main-title-xsm);
+  font-weight: bold;
+  color: var(--color-white);
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 1; 
+}
+
+/* 부모 요소에 position 설정 */
+.main-together .main-together-sec .idx1,
+.main-together .main-together-sec .idx2,
+.main-together .main-together-sec .idx3,
+.main-together .main-together-sec .idx4 {
+  position: relative; /* 텍스트를 절대 위치로 배치하기 위한 설정 */
+}
   /* footer */
 
   footer .footer-top {

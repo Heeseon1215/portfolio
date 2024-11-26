@@ -79,6 +79,8 @@ html ::selection {
   color: var(--color-primary);
 }
 
+
+
 /**** 기본 : 모바일 ****/
 
 /* 제목 */
@@ -515,6 +517,7 @@ header.toggle-btn  .menu-icon .bar3{
   flex-direction: column;
   margin: var(--spacing-xlg) 0;
   gap: 20px;
+  overflow: hidden;
 }
 
 .main-teafield .main-teafield-type .teafield {
@@ -606,6 +609,8 @@ header.toggle-btn  .menu-icon .bar3{
 .main-experience .sub-slide .main-experience-title-scroll li p {
   font-size: var(--font-main-title-sm);
 }
+
+
 
 .main-experience .sub-slide .main-experience-title-scroll .main-experience-ex1 .main-experience-ex1-img {
   background-image : linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3) ), url(./images/main-experience-ex1.jpg) ;
