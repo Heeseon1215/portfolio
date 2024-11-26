@@ -18,19 +18,21 @@
   <!-- og -->
   <meta property="og:title" content="Osulloc">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://heeseon1215.github.io/">
-  <meta property="og:url" content="https://heeseon1215.github.io/Osulloc/">
+  <meta property="og:image" content="https://heeseon1215.github.io/portfolio/Osulloc/images/main-introduce-img.png">
+  <meta property="og:url" content="https://heeseon1215.github.io/portfolio/Osulloc/index">
   <meta property="og:description" content="천혜의 자연과 사람의 정성으로 만든 명차 오설록">
 
   <!-- style -->
   <link rel="stylesheet" href="../assets/styles/reset.min.css">
   <link rel="stylesheet" href="../assets/styles/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../assets/styles/aos.css">
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="./indexmq.css">
 
   <!-- js -->
   <script src="../assets/scripts/jquery-3.7.1.min.js"></script>
   <script src="../assets/scripts/swiper-bundle.min.js"></script>
+  <script src="../assets/scripts/aos.js"></script>
   <script defer src="./index.js"></script>
 </head>
 
@@ -90,7 +92,7 @@
     </div>
   </div>
   <!-- main-story -->
-  <div class="main-story margin-basic" id="osulloc-history">
+  <div class="main-story margin-basic" id="osulloc-history" >
     <div class="main-stroy-intro">
       <h2 class="main-title" >오설록의 이야기</h2>
       <div class="main-story-intro-txt">
@@ -103,7 +105,7 @@
       </div>
     </div>
 
-    <div class="main-slide swiper">
+    <div class="main-slide swiper"  data-aos="fade-up"  data-aos-duration="500" data-aos-easing="linear">
       <ul class="main-stroy-history flex-wrapper swiper-wrapper ">
         <li class="swiper-slide idx1 idx">
           <div class="main-stroy-img ">
@@ -274,7 +276,8 @@
   </div>
 
   <!-- main-reason -->
-  <div class="main-reason">
+  <div class="main-reason" data-aos="fade-left"
+  data-aos-duration="1000" data-aos-easing="linear">
     <h2 class="main-title">특별한 이유</h2>
     <div class="main-title-track">
       <div class="main-title-track-flow-1">
@@ -320,6 +323,7 @@
         </ul>
         <div class="main-teafield-title">서광 차밭</div>
         <p>산방산 근처의 서광 차밭은 대기가 한라산을 지나며 많은 구름과 안개를 형성하고, 이는 자연 차광 효과를 내 찻잎의 색을 좋게 만듭니다.</p>
+    
       </div>
 
       <!-- 돌송이 차밭 -->
@@ -402,7 +406,7 @@
             </div>
           </li>
         </ul>
-      </d>
+      </div>
       <div class="swiper-scrollbar"></div>
     </div>
   </div>
@@ -443,8 +447,8 @@
         </div>
       </li>
       <li class="idx4 idx">
-        <img src="./images/main-together-sec4.jpg" alt="수제 말차 카스텔라">
-        <p class="main-together-sub-title">수제 말차 카스텔라</p>
+        <img src="./images/main-together-sec4.jpg" alt="수제 말차 카스테라">
+        <p class="main-together-sub-title">수제 말차 카스테라</p>
         <div class="main-together-notice">
           <p>배송비 무료</p>
           <p>한정수량</p>

@@ -164,7 +164,6 @@ header.toggle-btn .menu {
 
 header .menu .global-menu {
   width: 90vw;
-  font-family: var(--font-main-ko);
   font-size: var(--font-main-title-rg);
   color: var(--color-white);
   flex-direction: column;
@@ -276,14 +275,12 @@ header.toggle-btn  .menu-icon .bar3{
 
 .main-introduce .main-introduce-text {
   font-size: var(--font-main-title-xsm);
-  font-family: var(--font-main-ko);
   line-height: 1.6rem;
   color: var(--color-primary);
   margin: var(--spacing-md);
   margin-left: auto;
   width: 240px;
   font-weight: 500;
-
 }
 .main-introduce .main-introduce-text .main-introduce-sub-text{
   display: none; 
@@ -292,7 +289,6 @@ header.toggle-btn  .menu-icon .bar3{
 
 /* main-story */
 .main-story .main-stroy-intro {
-  font-family: var(--font-main-ko);
   border-top: 1px solid #d6d6d6;
   padding-top: var(--spacing-sm);
 }
@@ -383,11 +379,7 @@ header.toggle-btn  .menu-icon .bar3{
 .main-story .main-slide .idx26 .main-stroy-img{background-image: url(./images/idx26-grayscale.jpg);}
 
 
-.main-story .main-slide {
-  font-family: var(--font-main-ko);
-}
 .main-story .main-slide li .main-stroy-img {
-  font-family: var(--font-main-ko);
   color: var(--color-white);
   line-height: 1.2rem;
   font-size: var(--font-main-title-xsm);
@@ -532,7 +524,7 @@ header.toggle-btn  .menu-icon .bar3{
   color: var(--color-white);
 }
 
-.main-teafield .main-teafield-type .main-teafield-type1 {background-image: url(./images/main-teafield-type1-gray.jpg);}
+.main-teafield .main-teafield-type .main-teafield-type1  {background-image: url(./images/main-teafield-type1-gray.jpg);}
 .main-teafield .main-teafield-type .main-teafield-type2{background-image: url(./images/main-teafield-type2-gray.jpg);}
 .main-teafield .main-teafield-type .main-teafield-type3{background-image: url(./images/main-teafield-type3-gray.jpg);}
 
@@ -791,7 +783,8 @@ footer .footer-info {
   align-content: center;
   gap: 8px;
   margin-bottom: 10px;
+  align-items: center;
 }
 footer .footer-info img {
-  width: 10px;
+  width: 10px; aspect-ratio: 1/1;
 }

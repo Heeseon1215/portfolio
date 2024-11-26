@@ -1,3 +1,12 @@
+AOS.init();
+
+
+// a href="#" 속성 없애기
+$('a[href="#"').on('click', function(e){
+  e.preventDefault()
+});
+
+
 // 모바일 토글 버튼
 $('header').on('click', function() {
   // header 메뉴 아이콘 클릭 시 toggle-btn이 적용/미적용
@@ -18,7 +27,6 @@ $('.global-menu li').each(function(idx, list) {
 
     // 이전 스크롤. 브라우저를 열면 바로 읽기 때문에 0
     let prevScroll = window.scrollY;
-    console.log('prevScroll', prevScroll)
 
   
     $(window).on('scroll', function () {
@@ -29,8 +37,7 @@ $('.global-menu li').each(function(idx, list) {
       }
       
       let currentScroll = window.scrollY;
-      console.log('currentScroll', prevScroll)
-  
+
       if (prevScroll > currentScroll) { 
         //스크롤을 올리면(스크롤의 이동거리가 0에 가까워진다) 헤더가 보이고
         $('header').css({transform : 'translateY(0)'});
@@ -41,12 +48,7 @@ $('.global-menu li').each(function(idx, list) {
       
       // prev에 현재 스크롤 값 재할당
       prevScroll = currentScroll
-      console.log(prevScroll)
     })
-
-
-
-
 
 
 
@@ -63,15 +65,17 @@ const mainswiper = new Swiper('.main-slide', {
   breakpoints: {
     768: {
       slidesPerView: 4,
-      spaceBetween: 0,
-    }
+      spaceBetween: 10,
+    },
   },
+  autoplay: {
+    delay: 1000, disableOnInteraction: false, }
 });
 
 const subswiper = new Swiper('.sub-slide', {
   slidesPerView: 1,
-  autoplay: true,
   loop: true,
+
   scrollbar : {
     el: '.swiper-scrollbar',
     hide: false
@@ -81,6 +85,15 @@ const subswiper = new Swiper('.sub-slide', {
     768: {
       slidesPerView: 2,
       spaceBetween: 20,
+    },
+    1080: {
+      slidesPerView: 4,
+      spaceBetween: 10,
     }
   },
+  autoplay: {
+    delay: 2500, disableOnInteraction: false, }
 });
+
+
+

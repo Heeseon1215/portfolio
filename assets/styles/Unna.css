@@ -3,35 +3,17 @@
 /* Unna.css */
 @font-face {
   font-family: 'Unna';
-  src: local('Unna'),
-  url(../fonts/Unna-BoldItalic.woff2) format('woff2');
+  src: url(../fonts/Unna-Bold.woff2) format('woff2');
   font-style: normal;
-  font-display: swap;
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: 'Unna';
-  src: local('Unna'),
-  url(../fonts/Unna-Italic.woff2) format('woff2');
-  font-style: normal;
-  font-display: swap;
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Unna';
-  src: local('Unna'),
-  url(../fonts/Unna-Bold.woff2) format('woff2');
+  src: url(../fonts/Unna-Regular.woff2) format('woff2'),
+  url(../fonts/.ttf) format('truetype');
   font-style: normal;
-  font-display: swap;
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Unna';
-  src: url(../fonts/Unna-Regular.woff2) format('woff2');
-  font-style: normal;
-  font-display: swap;
   font-weight: 400;
+  font-display: swap;
 }
