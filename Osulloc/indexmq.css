@@ -127,23 +127,25 @@
     position: relative;
   }
 
+  .main-introduce .main-introduce-title {
+    margin: 0 auto;
+    text-align: center;
+   }
   .main-introduce .main-introduce-img {
-    padding-left: 15vw;
-    margin-bottom: var(--spacing-xsm);
-  }
-
-  .main-introduce img {
     margin: 0 auto;
   }
+
 
   .main-introduce .main-introduce-text {
     font-size: var(--font-main-title-xxsm);
     line-height: 1.4rem;
-    margin: var(--spacing-xsm) auto 0;
-    padding-left: 15vw;
+    margin: 10px auto;
     width: 400px;
     text-align: center;
   }
+
+
+  
 
 
   .main-introduce .main-introduce-text .main-introduce-sub-text {
@@ -410,47 +412,54 @@
     color: var(--color-primary);
   }
   .main-together .main-together-sec .idx {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr)
+    display: flex;
+    grid-template-columns: repeat(6, 1fr);
+    flex-direction: column;
+
   }
-  .main-together .main-together-sec .idx img {
-    display: grid;
-    grid-column: 1 / 7;
-    gap: 20px;
+  .main-together .main-together-sec .idx .main-together-img-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .main-together .main-together-sec .idx p {
-    grid-column: 1 / 5;
+    display: inline;
   }
-  .main-together .main-together-sec .idx .main-together-notice {
-    grid-column: 5 / 7;
-    margin: 20px 0 0 0;
-    font-size: var(--font-main-title-xxsm);
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .main-together .main-together-sec .idx:nth-child(even) p {
-    grid-column: 1 / 4;
-  }
-  .main-together .main-together-sec .idx:nth-child(even) .main-together-notice {
-    grid-column: 4 / 7;
-  }
+
   .main-together .main-together-sec img {
     width: 100%;
     transition: 0.3s;
     transform: scale(1);
     position: relative;
   }
-  .main-together .main-together-sec .idx1 img {
-    width: 30vw;
+
+  .main-together .main-together-sec .idx1 .idx-img-wrapper, 
+  .main-together .main-together-sec .idx3 .idx-img-wrapper, 
+  .main-together .main-together-sec .idx4 .idx-img-wrapper {
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    overflow: hidden;
+    transition: 0.3s;
+    transform: scale(1);
+    border-radius: 16px;
   }
-  .main-together .main-together-sec .idx2 img {
+
+  .main-together .main-together-sec .idx2 .idx-img-wrapper {
+    transition: 0.3s;
+    transform: scale(1);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+
+  /* 오설록 신상 밀크티 위크 수정 */
+  .main-together .main-together-sec .idx2 .idx-img-wrapper img {
     width: 100%;
     aspect-ratio: 5 / 3;
     object-fit: cover;
   }
 
+  /* 이미지 위치 배치 */
   .main-together .main-together-sec .idx1 {
     grid-column: 1 / 4;
     grid-row: 2 / 5;
@@ -469,14 +478,15 @@
   }
 
   /* hover */
-.main-together .main-together-sec .idx1:hover img,
-.main-together .main-together-sec .idx2:hover img,
-.main-together .main-together-sec .idx3:hover img,
-.main-together .main-together-sec .idx4:hover img {
-  filter: blur(2px) brightness(0.5);
-  transition: filter 0.3s ease; 
-}
 
+  .main-together .main-together-sec .idx1:hover img,
+  .main-together .main-together-sec .idx2:hover img,
+  .main-together .main-together-sec .idx3:hover img,
+  .main-together .main-together-sec .idx4:hover img{
+   transform: scale(1.2);
+   filter: brightness(0.5);
+  }
+  
 
 .main-together .main-together-sec .idx1:hover::after,
 .main-together .main-together-sec .idx2:hover::after,
@@ -484,15 +494,12 @@
 .main-together .main-together-sec .idx4:hover::after {
   content: "Go to Buy";
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   font-family: var(--font-main-en);
-  transform: translate(-50%, -50%); 
-  font-size: var(--font-main-title-xsm);
-  font-weight: bold;
+  transform: translate(-50%, -50%) ; 
+  font-size: var(--font-main-title-sm);
   color: var(--color-white);
-  border-radius: 10px;
-  padding: 10px;
   z-index: 1; 
 }
 
@@ -524,11 +531,26 @@
     flex-direction: column;
   }
 
-  footer .footer-top .footer-intro img {
+
+
+  footer .footer-top .footer-intro .footer-info-img { 
+    overflow: hidden;
+    border-radius: 24px;
+  }
+
+  footer .footer-top .footer-intro .footer-info-img:hover img {
+    transition: 0.3s;
+    transform: scale(1.2);
+  }
+
+  footer .footer-top .footer-intro .footer-info-img img {
     width: 300px;
     aspect-ratio: 2 / 1;
     object-fit: cover;
     border-radius: 16px;
+    transition: 0.3s;
+    transform: scale(1);
+
   }
 
   footer .footer-top .footer-logo::after {
@@ -658,28 +680,30 @@
   /* main-introduce */
   .main-introduce {
     display: flex;
+    gap: 30px;
   }
+
 
   .main-introduce .main-introduce-title {
     font-size: var(--font-main-title-xxlg);
     line-height: 1;
-    padding-right: 5vw;
     margin-top: 50px;
+    text-align: right;
+    width: 500px;
   }
-  .main-introduce .main-introduce-img  {
-    padding: 0;
+
+
+  .main-introduce-img {
+    width: 450px; 
+    height: 760px; 
   }
-  .main-introduce img {
-    height: 860px;
-    width: 450px;
-    margin: 0 auto;
-  }
+
+  
 
   .main-introduce .main-introduce-text {
     font-size: var(--font-main-title-xsm);
     line-height: 1.6rem;
-    padding-left: 5vw;
-    width: 600px;
+    width: 450px;
     text-align: left;
     margin-top: auto;
     margin-bottom: 50px;
@@ -690,7 +714,7 @@
 
   .main-introduce .main-introduce-text .main-introduce-sub-text {
     font-size: var(--font-main-title-xxsm);
-    top: 48%;
+    top: 40%;
   }
 
 
