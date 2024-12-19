@@ -1,0 +1,9 @@
+/* impact.css */
+@font-face {
+  font-family: 'impact';
+  src: local('Impact'),
+  url(../fonts/ImpactLTStd.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+}

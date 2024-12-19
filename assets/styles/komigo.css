@@ -1,0 +1,19 @@
+/* komigo.css */
+@font-face {
+  font-family: 'komigo';
+  src: local('Komigo Regular'),
+  url(../fonts/Komigo-Regular.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+}
+
+/* komigo 3D.css */
+@font-face {
+  font-family: 'komigo 3D';
+  src: local('Komigo 3D Regular'),
+  url(../fonts/Komigo3D-Regular.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+}
