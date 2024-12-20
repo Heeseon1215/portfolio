@@ -46,7 +46,7 @@
   <script src="./assets/scripts/ScrollTrigger.min.js"></script>
   <script defer src="./assets/scripts/global.js"></script>
 
-  <script defer src="./assets/scripts/index.js"></script>
+  <script defer src="./index.js"></script>
 
 
 </head>
@@ -81,30 +81,73 @@
   </header>
 
   <!--======== main ========-->
-  <!--==== main-introduce ====-->
-  <div class="main-intro padding-basic ">
-    <div class="main-intro-txt flex-container">
-      <div class="intro-web"> WEB</div>
-      <div id="arrow"></div>
-      <div class="intro-pub">PUBLISHER</div>
-      <div class="shiningline"></div>
-      <div class="shinig"></div>
-      <div class="intro-ui">UI</div>
-      <div id="mouse"></div>
-      <div class="intro-ux">UX</div>
-      <div id="emotion"></div>
-      <div class="intro-design">DESIGNER</div>
-      <div class="intro-name">HEESEON's</div>
-      <div id="rabbit"></div>
-      <div class="shiningline1">PORTFOLIO</div>
-      <div class="shiningline1"></div>
+  <div class="main-introduce">
+    <div class="main-introduce-txt">
+      <div class="main-introduce-txt-wrapper flex-container" cursor-class="link1">
 
-      <!-- 포지션 고정 -->
-      <div class="big-arrow"></div>
+        <!-- WEB PUBLISHER -->
+        <div class="main-introduce-web-wrapper flex-container content">
+          <h2 class="main-introduce-web flex-container">
+            WEB<span id="arrow" class="main_introduce_arrow"></span>
+          </h2>
+          <h2 class="main-introduce-publisher flex-container">
+            PUBLISHER <span id="shinigLine" class="main-introduce-shining-line"></span>
+          </h2>
+        </div>
+
+        <!-- UI UX DESIGNER -->
+        <h2 class="main-introduce-uiux flex-container content2 ">
+          <span id="shinig" class="main_introduce-shining"></span>UX<span id="mouse"
+            class="main-introduce-mouse"></span>
+          UI<span id="emotion" class="main-introduce-emotion"></span>
+        </h2>
+        <h2 class="main-introduce-designer content2">
+          DESIGNER
+        </h2>
+
+        <!-- HEESEON's -->
+        <h2 class="main-introduce-name flex-container content3">
+          HEESEON's<span id="rabbit" class="main-introduce-rabbit"></span>
+        </h2>
+
+        <!-- PORTFOLIO -->
+        <h2 class="main-introduce-portfolio content4">
+          <img class="main-introduce-bigarrow" src="./images/arrow_big.svg" alt="big-arrow"> PORTFOLIO
+        </h2>
+      </div>
+      <h3 class="main-introduce-intro content5">
+        IT SHOWS A CREATIVE JOURNEY
+        <br> FROM CONCEPT TO COMPLETION
+      </h3>
+
+      <div class="main-introduce-exploring button-list content6 " cursor-class="link1">
+        <button>Exploring&nbsp;a&nbsp; portfolio</button>
+      </div>
+
+      <p class="main-scroll content6">
+        SCROLL DOWN
+      </p>
     </div>
+  </div>
 
 
 
+
+
+  <!--==== main-introduce ====-->
+
+<!-- 
+
+
+  <div class="main-intro padding-basic ">
+
+    
+
+
+
+
+
+    txt
     <p class="intro-info">
       IT SHOWS A CREATIVE JOURNEY
       <br> FROM CONCEPT TO COMPLETION
@@ -112,8 +155,7 @@
     <p class="intro-btn"> Exploring &nbsp; a &nbsp; portfolio</p>
     <p class="intro-scroll">SCROLL DOWN</p>
   </div>
-
-
+ -->
 
   <!--==== main-project ====-->
   <section class="project padding-basic" id="#project">
@@ -136,7 +178,7 @@
         
         <!-- 자바활용페이지 -->
         <li>
-          <a href="https://heeseon1215.github.io/portfolio/SONY/detail" target="_blank">
+          <a href="https://heeseon1215.github.io/portfolio/SONY/detail">
             <section class="pr">
               <div class="pr-info pr1">
                 <div class="list-logo "></div>
@@ -255,7 +297,7 @@
             <div class="pr-info pr1">
               <div class="list-logo "></div>
               <h3 class="pr-name">플플플</h3>
-              <p>개인 프로젝트
+              <p>팀 프로젝트
                 <br>2022.03.11 - 2022.06.28
               </p>
               <img src="./images/skill-icons_figma.svg" alt="figma">

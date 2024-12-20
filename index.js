@@ -1,12 +1,10 @@
 // a href="#" 속성 없애기
-$('a[href="#"').on('click', function (e) {
+$('a[href="#"]').on('click', function (e) {
   e.preventDefault()
 });
 
 
-
 // lottie 스크립트
-
 const arrow = lottie.loadAnimation({
   container: document.getElementById('arrow'),
   renderer: 'svg',
@@ -65,7 +63,6 @@ const rabbit2 = lottie.loadAnimation({
 
 
 // project-list
-
 const listItems = document.querySelectorAll(".project-list li");
 const wrappers = document.querySelectorAll(".project-wrapper ul");
 
@@ -84,7 +81,6 @@ listItems.forEach((item, index) => {
 
 
 // 아코디언 메뉴
-
 $(".sk-list>a").click(function () {
   let submenu = $(this).next("ul");
   if (submenu.is(":visible")) {
