@@ -83,5 +83,14 @@ listItems.forEach((item, index) => {
 });
 
 
+// 아코디언 메뉴
 
+$(".sk-list>a").click(function () {
+  let submenu = $(this).next("ul");
+  if (submenu.is(":visible")) {
+    submenu.slideUp();
+  } else {
+    submenu.slideDown();
+  }
+});
 

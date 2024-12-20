@@ -53,12 +53,6 @@ section {
 
 
 /***** main-project *****/
-.project {
-
-}
-
-
-
 .project .main-title {
   margin-bottom: var(--spacing-lg);
 
@@ -108,26 +102,132 @@ section {
 }
 .project-wrapper .webpub li .pr {
   position: relative;
-
+  color: var(--color-gray-900);
+  font-family: var(--font-main-ko);
 }
 .project-wrapper .webpub li .pr .pr-info {
   position: absolute;
+  padding: var(--spacing-sm);
 }
 .project-wrapper .webpub li .pr .pr-img {
   border-radius: 24px;
 }
-.project-wrapper .webpub li .pr .pr-info .list-logo {}
-.project-wrapper .webpub li .pr .pr-info1 .list-logo {}
-.project-wrapper .webpub li .pr .pr-info2 .list-logo {}
-.project-wrapper .webpub li .pr .pr-info3 .list-logo {}
-.project-wrapper .webpub li .pr .pr-info .pr-name {}
-.project-wrapper .webpub li .pr .pr-info .p {}
-.project-wrapper .webpub li .pr .pr-info .pr-skill {}
+
+.project-wrapper .webpub li .pr .pr-info .pr-name {
+  font-size: var(--font-main-title-md);
+  font-weight: 600;
+}
+
 .project-wrapper .webpub li .pr .pr-info img {width: 24px;}
 
 
 
+  
+/***** main-aboutme *****/
+.aboutme {flex-direction: column;}
 
+.aboutme .me-wrapper {
+  grid-template-columns: 1fr 3fr;
+  width: 60vw;
+  justify-items: end;
+  margin-left: auto;
+  font-family: var(--font-main-ko);
+}
+
+.aboutme .me-wrapper .me-list {
+  grid-column: 1;
+  align-content: end;
+  font-size: var(--font-main-title-md);
+  font-family: var(--font-main-ko);
+}
+
+.aboutme .me-wrapper .me-list li {
+  padding: 20px;
+}
+
+.aboutme .me-wrapper .me-list li p {
+  margin-left: 15px;
+}
+.aboutme .me-wrapper .me-list img {
+  max-width: 300px;
+}
+
+.aboutme .me-wrapper .me-info {
+  grid-column: 2;
+  font-size: var(--font-main-title-lg);
+  padding-top: var(--spacing-lg);
+  position: relative;
+}
+
+.aboutme .me-wrapper .me-info::before {
+  content: "";
+  width: 100px; height: 100px;
+  position: absolute;
+  background: url(./images/aboutme2.png) no-repeat;
+  top: 60%;
+  left: -8%;
+}
+.aboutme .me-wrapper .me-info strong {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+
+
+
+
+
+/***** main-skill *****/
+.main-skill {
+  padding-top: var(--spacing-lg);
+  font-family: var(--font-main-ko);
+}
+.skill-list {
+  flex-flow: column;
+  width: 50vw;
+  margin-left: auto;
+  
+}
+
+.skill-list li {
+  border-bottom: var(--color-primary) solid 2px;
+}
+.skill-list li:last-child {
+  border-bottom: none;
+}
+
+.sk-list a {
+  cursor:pointer;
+  font-size: var(--font-main-title-lg);
+  font-family: var(--font-main-en);
+  font-weight: 500;
+  margin: var(--spacing-md) 0;
+  gap: 30px;
+  padding-left: var(--spacing-sm);
+}
+.sk-list a strong {
+  font-weight: 500;
+}
+
+/* 아코디언 기능 구현 */
+
+.sk-list .hide{
+  display:none; 
+  font-family: var(--font-main-ko);
+  padding-left: var(--spacing-xlg);
+  margin-bottom: var(--spacing-rg);
+}
+
+.hide {
+  border-top: var(--color-primary) dotted 2px ;
+  padding: 10px;
+}
+
+.hide li{
+  font-size: var(--font-main-title-rg);
+  line-height: 3rem;
+  border-bottom: none;
+}
 
 
 
@@ -245,4 +345,3 @@ section {
   bottom: var(--spacing-xsm); 
   font-size: var(--font-main-title-rg);
 }
-  
