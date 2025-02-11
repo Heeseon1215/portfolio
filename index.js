@@ -62,14 +62,40 @@ const rabbit2 = lottie.loadAnimation({
 });
 
 
-// project-list
+
+// project
 const listItems = document.querySelectorAll(".project-list li");
 const wrappers = document.querySelectorAll(".project-wrapper ul");
 
 listItems.forEach((item, index) => {
-  item.addEventListener("click", () => {
-    listItems.forEach(li => li.classList.remove("active"));
+  const originalSrc = item.querySelector("img").src;  
+
+  if (index === 0) {
     item.classList.add("active");
+    const img = item.querySelector("img");
+    if (img) {
+      img.src = './images/detail-shi2-01.svg';
+    }
+    if (wrappers[index]) {
+      wrappers[index].classList.add("active");
+    }
+  }
+
+  item.addEventListener("click", () => {
+    listItems.forEach((li) => {
+      li.classList.remove("active");
+      const img = li.querySelector("img");
+      if (img) {
+        img.src = originalSrc; 
+      }
+    });
+
+    item.classList.add("active");
+
+    const img = item.querySelector("img");
+    if (img) {
+      img.src = './images/detail-shi2-01.svg';
+    }
 
     wrappers.forEach(wrapper => wrapper.classList.remove("active"));
 
@@ -78,6 +104,7 @@ listItems.forEach((item, index) => {
     }
   });
 });
+
 
 
 // 아코디언 메뉴
