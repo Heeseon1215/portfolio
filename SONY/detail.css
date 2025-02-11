@@ -781,24 +781,26 @@ width: 30%;
             font-size: var(--font-main-title-xxlg);
             margin-bottom: 105px;
             font-family: var(--font-main-en);
-            bottom: 50px;
+            bottom: -55px;
       }
 
       
       /* 이미지 수정 */
       .project-title .title-img {
             align-items: center;
+            position: relative;
       }
       .project-title .title-img .img-desktop {
             width: 60vw;   
-            padding-right: 64px;         
+            padding-right: 64px;      
+            z-index: 2;
       }
   
 
       .project-title .title-img .title-circle {
             max-width: 600px;
             top: 20%; left: 45%;
-
+            z-index: -1;
       }
       
 
