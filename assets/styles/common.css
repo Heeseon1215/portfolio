@@ -41,7 +41,9 @@
       --color-sub3-primary : #D77200;
       --color-sub3-secondary : #F3A600;
 
-
+      /* MY CALENDER */
+      --color-sub4-primary : #FF9900;
+      --color-sub4-secondary : #AEDA74;
 
       /* border */
       --border-btm-primary: 2px solid var(--color-primary);
