@@ -45,6 +45,10 @@
       --color-sub4-primary : #FF9900;
       --color-sub4-secondary : #AEDA74;
 
+      /* 부모로와 */
+      --color-sub5-primary : #FF72A7;
+      --color-sub5-secondary : #FDC500;
+
       /* border */
       --border-btm-primary: 2px solid var(--color-primary);
       --border-btm-primary-skill: 2px solid var(--color-primary);
