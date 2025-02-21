@@ -49,6 +49,10 @@
       --color-sub5-primary : #FF72A7;
       --color-sub5-secondary : #FDC500;
 
+      /* 런모션 */
+      --color-sub6-primary : #2D5BFF;
+      --color-sub6-secondary : #FFCE22;
+
       /* border */
       --border-btm-primary: 2px solid var(--color-primary);
       --border-btm-primary-skill: 2px solid var(--color-primary);
